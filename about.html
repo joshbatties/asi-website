@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>About - ASI</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Existing styles */
+        .second-footer {
+            display: none;
+            padding: 0;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        .show-footer {
+            display: block;
+        }
+
+        .main-footer {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #272833;
+            color: white;
+        }
+
+        .main-footer .copyright {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.8em;
+            line-height: 1em;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .main-footer .copyright li {
+            border-left: solid 1px rgba(255, 255, 255, 0.3);
+            display: inline-block;
+            list-style: none;
+            margin-left: 1.5em;
+            padding-left: 1.5em;
+        }
+
+        .main-footer .copyright li:first-child {
+            border-left: 0;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        .main-footer .copyright li a {
+            color: inherit;
+        }
+
+        .main-footer p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-footer div:first-child {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 1em;
+        }
+
+        .main-footer img {
+            max-height: 60px;
+        }
+
+        .main-footer div:nth-child(2) {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-footer div:nth-child(3) {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-right: 1em;
+        }
+
+        .about-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2em 1em;
+        }
+
+        .about-section {
+            margin-bottom: 2em;
+            border: 2px solid #0071ce;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .about-content {
+            padding: 2em 2em 1em
+        }
+
+        .about-section:nth-child(odd) .about-content {
+            text-align: right;
+        }
+
+        .about-section:nth-child(even) .about-content {
+            text-align: left;
+        }
+
+        .about-section h3 {
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 736px) {
+            .about-section .about-content,
+            .about-section:nth-child(even) .about-content {
+                text-align: left;
+            }
+        }
+
+        .about-section {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .about-section:nth-child(even) {
+            transform: translateX(-50px);
+        }
+
+        .about-section.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        @media screen and (max-width: 736px) {
+            .about-section,
+            .about-section:nth-child(even) {
+                transform: translateY(50px);
+            }
+            
+            .about-section.visible {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <div id="page-wrapper">
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a href="index.html"><img src="images/ASI.png" style="width: 100px; height: auto;"></a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li>
+                        <a href="products.html">Products</a>
+                        <ul>
+                            <li><a href="index.html">Steel Reinforcing Bar</a></li>
+                            <li><a href="index.html">Steel Fabrication</a></li>
+                            <li><a href="index.html">Steel Mesh</a></li>
+                            <li>
+                                <a href="#">Tools & Accessories</a>
+                                <ul>
+                                    <li><a href="#">Mesh</a></li>
+                                    <li><a href="#">Bar Chairs</a></li>
+                                    <li><a href="#">Tyre Wires</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li>
+                        <a href="services.html">Services</a>
+                        <ul>
+                            <li><a href="index.html">Processing Bar</a></li>
+                            <li><a href="index.html">Steel Fabrication</a></li>
+                            <li><a href="index.html">Technical Support</a></li>
+                            <li><a href="index.html">Materials Delivery</a></li>
+                            <li><a href="index.html">Plan Scheduling</a></li>    
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" class="button primary">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main" class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <h2>About us</h2>
+                    <p>ASI: The smart choice for steel fabrication.</p>
+                </header>
+
+                <!-- Content -->
+                <section id="content">
+                    <div class="about-container">
+                        <div class="about-section">
+                            <div class="about-content">
+                                <h3>Our Expertise</h3>
+                                <p>We excel in rapidly creating custom solutions that fit your needs precisely. Our experienced team of professionals brings over 60 years of combined industry experience to every project, ensuring high-quality results and efficient service from concept to completion.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-section">
+                            <div class="about-content">
+                                <h3>Our Difference</h3>
+                                <p>We are committed to flexible scheduling, innovation and sustainability. Work with us and we will seamlessly handle the entire process, from initial drawings and designs to final manufacturing, always mindful of your budget and project timelines. Our goal is to foster long-term relationships with our clients by delivering fast turnaround times and outstanding results backed by free, competitive quotes.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-section">
+                            <div class="about-content">
+                                <h3>Our Commitment</h3>
+                                <p>We are committed to meeting your project specifications and regulatory standards with precision. Whether you need structural steelwork, custom metal parts, or specialized components, we have the expertise to deliver.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-section">
+                            <div class="about-content">
+                                <h3>Our Approach</h3>
+                                <p>We prioritize your satisfaction, offering friendly, professional service throughout your project journey. Our goal is to exceed your expectations with every service we provide.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-section">
+                            <div class="about-content">
+                                <h3>Our Services</h3>
+                                <p>We offer a comprehensive range of engineering and manufacturing solutions, consistently delivering high-quality, turnkey products on time and within budget. Our hands-on management style ensures strict quality control and adherence to ethical standards.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-section">
+                            <div class="about-content">
+                                <h3>Our Technology</h3>
+                                <p>Our state-of-the-art CNC technology, combined with CAD/CAM design and manufacturing, guarantees precision, structural durability, and a flawless finish for every product.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-section">
+                            <div class="about-content">
+                                <h3>Our People</h3>
+                                <p>We recognize that people are at the heart of our success. Through teamwork, respect, and a shared vision, our team of experienced engineers is dedicated to delivering top-tier service and quality.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div>
+                <img src="images/welder.png" alt="Company Logo">
+            </div>
+            <div>
+                <ul class="copyright">
+                    <li>&copy; Ace Steel Innovations. All rights reserved.</li>
+                </ul>
+            </div>
+            <div>
+                <p>
+                    Address: 1234 Steel Avenue, Metaltown, USA<br>
+                    Phone: (123) 456-7890<br>
+                    Email: info@acesteel.com
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const sections = document.querySelectorAll('.about-section');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
