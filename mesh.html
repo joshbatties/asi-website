@@ -396,6 +396,48 @@
             </div>
         </section>
 
+        <!-- Contact Form Section -->
+        <section id="contact-form" class="wrapper style2 special fade">
+            <div class="container" style="max-width: 800px; margin: 0 auto; text-align: left;">
+                <header>
+                    <h2>Get a free quote</h2>
+                    <p>If you are interested in any of these products please submit the form to help us understand your needs and a team member will reach out to you as soon as possible.</p>
+                </header>
+                <div class="form-container">
+                    <form action="https://formsubmit.co/e21af56276f202ce8918c6c09852f23d" method="POST" id="contact-form">
+                        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                            <div style="flex: 1 1 40%; min-width: 200px;">
+                                <input type="text" name="name" id="name" placeholder="Name" required style="width: 100%;" />
+                            </div>
+                            <div style="flex: 1 1 40%; min-width: 200px;">
+                                <input type="email" name="email" id="email" placeholder="Email" required style="width: 100%;" />
+                            </div>
+                            <div style="flex: 1 1 40%; min-width: 200px;">
+                                <input type="text" name="phone" id="phone" placeholder="Phone (Optional)" style="width: 100%;" />
+                            </div>
+                            <div style="flex: 1 1 40%; min-width: 200px;">
+                                <input type="text" name="company" id="company" placeholder="Company (Optional)" style="width: 100%;" />
+                            </div>
+                            <div style="flex: 1 1 100%;">
+                                <textarea name="message" id="message" placeholder="Message" rows="4" required style="width: 100%;"></textarea>
+                            </div>
+                            <div style="flex: 1 1 100%;">
+                                <ul class="actions" style="display: flex; gap: 10px; padding: 0; list-style: none;">
+                                    <li><input type="submit" value="Send Message" class="primary" /></li>
+                                    <li><input type="reset" value="Reset Form" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Hidden inputs for FormSubmit configuration -->
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5502/slide/thankyou.html">
+                        <input type="hidden" name="_subject" value="New submission from ASI Website">
+                        <input type="hidden" name="_autoresponse" value="Thank you for your message. We will get back to you soon.">
+                        <input type="hidden" name="_template" value="table">
+                    </form>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer -->
         <footer class="main-footer">
             <div>
@@ -426,3 +468,5 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+        
