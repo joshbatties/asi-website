@@ -15,60 +15,44 @@
         }
 
         .intro-paragraph {
-            text-align: left;
+            text-align: center;
             margin: 0 auto 40px;
             max-width: 800px;
             font-size: 1.2em;
             padding: 0 20px;
         }
 
-        .section-heading {
-            text-align: left;
-            margin-top: 40px;
-            font-size: 2em;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-            padding: 0 20px;
-        }
-        
         .content-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
             padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
         .content-item {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: auto;
-        }
-
-        .content-item img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin: 15px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .content-item h3 {
             margin-top: 0;
             font-size: 1.5em;
             margin-bottom: 10px;
-            text-align: left;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
 
-        .content-item p {
-            margin-bottom: 15px;
-            text-align: left;
+        .content-item img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         table {
@@ -79,14 +63,18 @@
         }
 
         th, td {
-            padding: 6px;
+            padding: 4px;
             text-align: left;
-            border: 1px solid #ddd;
         }
 
         th {
-            font-size: 0.95em;
-            background-color: #f2f2f2;
+            font-size: 0.7em;
+        }
+
+        @media (max-width: 768px) {
+            .content-item img {
+                max-height: 200px;
+            }
         }
 
         .second-footer {
@@ -186,7 +174,6 @@
 </head>
 <body class="is-preload">
     <div id="page-wrapper">
-
         <!-- Header -->
         <header id="header">
             <h1 id="logo"><a href="index.html"><img src="images/ASI.png" style="width: 100px; height: auto;"></a></h1>
@@ -240,165 +227,171 @@
             <div class="content-section">
                 <div class="content-item">
                     <h3>Square Reinforcing Mesh</h3>
-                    <img src="images/square_mesh.jpg" alt="Square Reinforcing Mesh">
-                    <p>Square mesh is manufactured from L grade ribbed wires (D500L) that are welded together with equal spacing in both directions to form square apertures. Standard sheets of reinforcing mesh are 2.4m x 6.0m</p>
-                    <p>All mesh complies with AS/NZS 4671</p>
-                    <table>
-                        <tr>
-                            <th>Product</th>
-                            <th>Long Wire (mm)</th>
-                            <th>Cross Wire (mm)</th>
-                            <th>Approx. Mass/ Sheet (kg)</th>
-                        </tr>
-                        <tr>
-                            <td>SL62</td>
-                            <td>6.00 @ 200</td>
-                            <td>6.00 @ 200</td>
-                            <td>33</td>
-                        </tr>
-                        <tr>
-                            <td>SL72</td>
-                            <td>6.75 @ 200</td>
-                            <td>6.75 @ 200</td>
-                            <td>40</td>
-                        </tr>
-                        <tr>
-                            <td>SL82</td>
-                            <td>7.60 @ 200</td>
-                            <td>7.60 @ 200</td>
-                            <td>52</td>
-                        </tr>
-                        <tr>
-                            <td>SL92</td>
-                            <td>8.55 @ 200</td>
-                            <td>8.55 @ 200</td>
-                            <td>65</td>
-                        </tr>
-                        <tr>
-                            <td>SL102</td>
-                            <td>9.50 @ 200</td>
-                            <td>9.50 @ 200</td>
-                            <td>80</td>
-                        </tr>
-                    </table>
+                    <img src="images/squaremesh.jpg" alt="Square Reinforcing Mesh">
+                    <div class="content-text">
+                        <p>Square mesh is manufactured from L grade ribbed wires (D500L) that are welded together with equal spacing in both directions to form square apertures. Standard sheets of reinforcing mesh are 2.4m x 6.0m</p>
+                        <p>All mesh complies with AS/NZS 4671</p>
+                        <table>
+                            <tr>
+                                <th style="font-weight: bold;">Product</th>
+                                <th style="font-weight: bold;">Long Wire (mm)</th>
+                                <th style="font-weight: bold;">Cross Wire (mm)</th>
+                                <th style="font-weight: bold;">Approx. Mass/ Sheet (kg)</th>
+                            </tr>
+                            <tr>
+                                <td>SL62</td>
+                                <td>6.00 @ 200</td>
+                                <td>6.00 @ 200</td>
+                                <td>33</td>
+                            </tr>
+                            <tr>
+                                <td>SL72</td>
+                                <td>6.75 @ 200</td>
+                                <td>6.75 @ 200</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>SL82</td>
+                                <td>7.60 @ 200</td>
+                                <td>7.60 @ 200</td>
+                                <td>52</td>
+                            </tr>
+                            <tr>
+                                <td>SL92</td>
+                                <td>8.55 @ 200</td>
+                                <td>8.55 @ 200</td>
+                                <td>65</td>
+                            </tr>
+                            <tr>
+                                <td>SL102</td>
+                                <td>9.50 @ 200</td>
+                                <td>9.50 @ 200</td>
+                                <td>80</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
 
                 <div class="content-item">
                     <h3>Rectangular Reinforcing Mesh</h3>
-                    <img src="images/rectangular_mesh.jpg" alt="Rectangular Reinforcing Mesh">
-                    <p>Rectangular mesh is manufactured from L grade ribbed wires (D500L) that are welded together with different spacing in each direction to form rectangular apertures. Standard sheets of reinforcing mesh are 2.4m x 6.0m.</p>
-                    <table>
-                        <tr>
-                            <th>Product</th>
-                            <th>Long Wire (mm)</th>
-                            <th>Cross Wire (mm)</th>
-                            <th>Approx Mass per sheet (kg)</th>
-                        </tr>
-                        <tr>
-                            <td>RL718</td>
-                            <td>6.75 @ 100</td>
-                            <td>7.60 @ 200</td>
-                            <td>68</td>
-                        </tr>
-                        <tr>
-                            <td>RL818</td>
-                            <td>7.60 @ 100</td>
-                            <td>7.60 @ 200</td>
-                            <td>79</td>
-                        </tr>
-                        <tr>
-                            <td>RL918</td>
-                            <td>8.55 @ 100</td>
-                            <td>7.60 @ 200</td>
-                            <td>93</td>
-                        </tr>
-                        <tr>
-                            <td>RL1018</td>
-                            <td>9.50 @ 100</td>
-                            <td>7.60 @ 200</td>
-                            <td>109</td>
-                        </tr>
-                        <tr>
-                            <td>RL1118</td>
-                            <td>10.65 @ 100</td>
-                            <td>7.60 @ 200</td>
-                            <td>131</td>
-                        </tr>
-                        <tr>
-                            <td>RI1218</td>
-                            <td>11.90 @ 100</td>
-                            <td>7.60 @ 200</td>
-                            <td>157</td>
-                        </tr>
-                    </table>
+                    <img src="images/rectangularmesh.jpg" alt="Rectangular Reinforcing Mesh">
+                    <div class="content-text">
+                        <p>Rectangular mesh is manufactured from L grade ribbed wires (D500L) that are welded together with different spacing in each direction to form rectangular apertures. Standard sheets of reinforcing mesh are 2.4m x 6.0m.</p>
+                        <table>
+                            <tr>
+                                <th style="font-weight: bold;">Product</th>
+                                <th style="font-weight: bold;">Long Wire (mm)</th>
+                                <th style="font-weight: bold;">Cross Wire (mm)</th>
+                                <th style="font-weight: bold;">Approx Mass per sheet (kg)</th>
+                            </tr>
+                            <tr>
+                                <td>RL718</td>
+                                <td>6.75 @ 100</td>
+                                <td>7.60 @ 200</td>
+                                <td>68</td>
+                            </tr>
+                            <tr>
+                                <td>RL818</td>
+                                <td>7.60 @ 100</td>
+                                <td>7.60 @ 200</td>
+                                <td>79</td>
+                            </tr>
+                            <tr>
+                                <td>RL918</td>
+                                <td>8.55 @ 100</td>
+                                <td>7.60 @ 200</td>
+                                <td>93</td>
+                            </tr>
+                            <tr>
+                                <td>RL1018</td>
+                                <td>9.50 @ 100</td>
+                                <td>7.60 @ 200</td>
+                                <td>109</td>
+                            </tr>
+                            <tr>
+                                <td>RL1118</td>
+                                <td>10.65 @ 100</td>
+                                <td>7.60 @ 200</td>
+                                <td>131</td>
+                            </tr>
+                            <tr>
+                                <td>RI1218</td>
+                                <td>11.90 @ 100</td>
+                                <td>7.60 @ 200</td>
+                                <td>157</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
 
                 <div class="content-item">
                     <h3>Trench Mesh</h3>
-                    <img src="images/trench_mesh.jpg" alt="Trench Mesh">
-                    <p>Trench mesh is manufactured from ribbed wire in 6.0m lengths and complies with AS/NZS 4671</p>
-                    <table>
-                        <tr>
-                            <th>Product Code</th>
-                            <th>Width (mm)</th>
-                            <th>No. of Wires</th>
-                            <th>Approx. Mass per sheet (kg)</th>
-                        </tr>
-                        <tr>
-                            <td>L8TM3</td>
-                            <td>200</td>
-                            <td>3</td>
-                            <td>7</td>
-                        </tr>
-                        <tr>
-                            <td>L8TM4</td>
-                            <td>300</td>
-                            <td>4</td>
-                            <td>9</td>
-                        </tr>
-                        <tr>
-                            <td>L8TM5</td>
-                            <td>400</td>
-                            <td>5</td>
-                            <td>11</td>
-                        </tr>
-                        <tr>
-                            <td>L11TM3</td>
-                            <td>200</td>
-                            <td>3</td>
-                            <td>13</td>
-                        </tr>
-                        <tr>
-                            <td>L11TM4</td>
-                            <td>300</td>
-                            <td>4</td>
-                            <td>18</td>
-                        </tr>
-                        <tr>
-                            <td>L11TM5</td>
-                            <td>400</td>
-                            <td>5</td>
-                            <td>22</td>
-                        </tr>
-                        <tr>
-                            <td>L12TM3</td>
-                            <td>200</td>
-                            <td>3</td>
-                            <td>16</td>
-                        </tr>
-                        <tr>
-                            <td>L12TM4</td>
-                            <td>300</td>
-                            <td>4</td>
-                            <td>22</td>
-                        </tr>
-                        <tr>
-                            <td>L12TM5</td>
-                            <td>400</td>
-                            <td>5</td>
-                            <td>27</td>
-                        </tr>
-                    </table>
+                    <img src="images/trenchmesh.jpg" alt="Trench Mesh">
+                    <div class="content-text">
+                        <p>Trench mesh is manufactured from ribbed wire in 6.0m lengths and complies with AS/NZS 4671</p>
+                        <table>
+                            <tr>
+                                <th style="font-weight: bold;">Product Code</th>
+                                <th style="font-weight: bold;">Width (mm)</th>
+                                <th style="font-weight: bold;">No. of Wires</th>
+                                <th style="font-weight: bold;">Approx. Mass per sheet (kg)</th>
+                            </tr>
+                            <tr>
+                                <td>L8TM3</td>
+                                <td>200</td>
+                                <td>3</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>L8TM4</td>
+                                <td>300</td>
+                                <td>4</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>L8TM5</td>
+                                <td>400</td>
+                                <td>5</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>L11TM3</td>
+                                <td>200</td>
+                                <td>3</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <td>L11TM4</td>
+                                <td>300</td>
+                                <td>4</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>L11TM5</td>
+                                <td>400</td>
+                                <td>5</td>
+                                <td>22</td>
+                            </tr>
+                            <tr>
+                                <td>L12TM3</td>
+                                <td>200</td>
+                                <td>3</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>L12TM4</td>
+                                <td>300</td>
+                                <td>4</td>
+                                <td>22</td>
+                            </tr>
+                            <tr>
+                                <td>L12TM5</td>
+                                <td>400</td>
+                                <td>5</td>
+                                <td>27</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>
