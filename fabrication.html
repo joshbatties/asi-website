@@ -152,6 +152,28 @@
                 margin-top: 1em;
             }
         }
+
+        .quote-section {
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: left;
+            padding: 0 20px;
+        }
+        
+        .quote-section h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        
+        .quote-section p {
+            margin-bottom: 20px;
+        }
+        
+        #contact-form {
+            max-width: 600px;
+            margin: 0;
+            text-align: left;
+        }
     </style>
 </head>
 <body class="is-preload">
@@ -249,6 +271,43 @@
                     <p>Prefabricated reinforcement panels for walls, slabs, and other large surface area applications.</p>
                 </div>
             </div>
+        </section>
+
+        <!-- New Quote Section -->
+        <section class="quote-section">
+            <h2>Get a free quote</h2>
+            <p>If you are interested in any of these products, please submit the form to help us understand your needs. A team member will reach out to you as soon as possible.</p>
+            
+            <form action="https://formsubmit.co/e21af56276f202ce8918c6c09852f23d" method="POST" id="contact-form">
+                <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                    <div style="flex: 1 1 40%; min-width: 200px;">
+                        <input type="text" name="name" id="name" placeholder="Name" required />
+                    </div>
+                    <div style="flex: 1 1 40%; min-width: 200px;">
+                        <input type="email" name="email" id="email" placeholder="Email" required />
+                    </div>
+                    <div style="flex: 1 1 40%; min-width: 200px;">
+                        <input type="text" name="phone" id="phone" placeholder="Phone (Optional)" />
+                    </div>
+                    <div style="flex: 1 1 40%; min-width: 200px;">
+                        <input type="text" name="company" id="company" placeholder="Company (Optional)" />
+                    </div>
+                    <div style="flex: 1 1 100%;">
+                        <textarea name="message" id="message" placeholder="Message" rows="4" required></textarea>
+                    </div>
+                    <div style="flex: 1 1 100%;">
+                        <ul class="actions">
+                            <li><input type="submit" value="Send Message" class="primary" /></li>
+                            <li><input type="reset" value="Reset Form" /></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Hidden inputs for FormSubmit configuration -->
+                <input type="hidden" name="_next" value="http://127.0.0.1:5502/slide/thankyou.html">
+                <input type="hidden" name="_subject" value="New submission from ASI Website">
+                <input type="hidden" name="_autoresponse" value="Thank you for your message. We will get back to you soon.">
+                <input type="hidden" name="_template" value="table">
+            </form>
         </section>
 
         <!-- Footer -->
