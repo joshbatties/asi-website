@@ -7,34 +7,79 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
-        .custom-video {
-            position: absolute; /* or relative, depending on your layout */
-            top: 53%; /* Adjust this value to move the video vertically */
-            left: 55%; /* Adjust this value to move the video horizontally */
-            transform: translate(-50%, -50%); /* Centers the video */
-            width: 230%; /* Adjust the size as needed */
-            height: auto; /* Maintain aspect ratio */
-        }
 
-        #banner .content {
+body, html {
+            background-color: black;
+        }
+        #banner {
             position: relative;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
         }
-
-        #banner footer.major {
+        #banner .content {
             position: absolute;
-            bottom: 0;
+            top: 50%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+            color: white;
+            z-index: 2;
+            width: 50%;
+            max-width: 600px;
+        }
+        #banner h2 {
+            font-size: 60px;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+        #banner p {
+            font-size: 18px;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        #banner img {
+            position: absolute;
+            top: 0;
             left: 0;
-            margin: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
         }
 
-        #banner .actions {
-            margin: 0;
-        }
+        
+        @media screen and (max-width: 768px) {
+            #banner .content {
+                top: 15%;
+                left: 50%;
+                transform: translate(-50%, 0);
+                text-align: center;
+                width: 90%;
+            }
+            #banner h2 {
+                font-size: 50px; /* Increased from 40px to 50px */
+            }
+            #banner p {
+                font-size: 16px;
+            }
+            #banner img {
+                left: -20%; /* Shift image 20% to the left */
+                width: 120%; /* Increase width to cover the entire screen */
+            }
 
-        #banner .actions .button {
-            margin: 20px; /* Adjust margin for spacing as needed */
+            #banner .button {
+                display: flex;
+                width: 100%;
+                height: 50px; /* Set a fixed height */
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                text-align: center;
+                font-size: 18px;
+                    }
         }
-
         #four .content {
             display: flex;
             flex-wrap: wrap; /* Allow content to wrap to a new line if needed */
@@ -349,11 +394,10 @@
 
         <!-- Header -->
         <header id="header">
-            <h1 id="logo"><a href="index.html">ASI Logo</h1>
+            <h1 id="logo"><a href="index.html">ASI Logo</a></h1>
             <nav id="nav">
                 <ul>
-                    <li><a href="index2.html">SECOND HOME</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html">About us</a></li>
                     <li>
                         <a href="products.html">Products</a>
                         <ul>
@@ -374,28 +418,19 @@
                             <li><a href="index.html">Plan Scheduling</a></li>    
                         </ul>
                     </li>
-                    <li><a href="contact.html" class="button primary">Contact Us</a></li>
+                    <li><a href="contact.html" class="button primary">Contact us</a></li>
                 </ul>
             </nav>
         </header>
 
-<!-- Banner -->
-<section id="banner">
-    <div class="content" style="position: relative;">
-        <header>
-            <h2 style="font-size: 70px; text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5)">Ace Steel Innovations</h2>
-            <p style="font-size: 18px; font-style: italic; color: white">Proudly supplying the Australian market with innovative steel solutions since 2016.</p>
-        </header>
-        <span class="image" style="display: inline-block;">
-            <video class="custom-video" src="images/welding_video.mp4" autoplay loop muted playsinline></video>
-        </span>
-        <footer class="major" style="position: relative; text-align: center; margin-top: 20px;"> <!-- Adjusted positioning -->
-            <ul class="actions special" style="display: inline-block; margin: 0; padding: 0;">
-                <li><a href="contact.html" class="button" style="position: absolute; top: 0; left: 26%; transform: translate(-50%, -50%);">Get a quote</a></li>
-            </ul>
-        </footer>
-    </div>
-</section>
+        <section id="banner">
+            <img src="images/home.png" alt="Ace Steel Innovations">
+            <div class="content">
+                <h2>Ace Steel Innovations</h2>
+                <p>Proudly supplying the Australian market with innovative steel solutions since 2016.</p>
+                <a href="contact.html" class="button">Get a quote</a>
+            </div>
+        </section>
 
 
 
