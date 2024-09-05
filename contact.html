@@ -158,6 +158,69 @@
                 margin-top: 1em;
             }
         }
+
+        
+        .contact-container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            border-radius: 10px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .contact-item img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        .contact-item p {
+            margin: 0;
+            font-size: 0.9em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        @media screen and (max-width: 980px) {
+            .contact-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .contact-item {
+                margin: 0.5em 0;
+                width: 100%;
+            }
+        }
+
+        /* Ensure form inputs and contact info align */
+        .row.gtr-uniform {
+            width: 100%;
+        }
+
+        /* Adjust container width to match form width */
+        @media screen and (min-width: 737px) {
+            .contact-container {
+                width: calc(100% - 3em);
+            }
+        }
+
+        
     </style>
 </head>
 <body class="is-preload landing">
@@ -202,6 +265,27 @@
                     <p>Please fill out the form below and one of our staff will respond as soon as possible.</p>
                 </header>
 
+                <div class="contact-container">
+                    <!-- Company Contact Information -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <img src="images/email-blue.png" alt="Email">
+                            <p>info@acesteel.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <img src="images/telephone-blue.png" alt="Phone">
+                            <p>(123) 456-7890</p>
+                        </div>
+                        <div class="contact-item">
+                            <img src="images/hours-blue.png" alt="Hours">
+                            <p>Mon-Fri: 9am-5pm</p>
+                        </div>
+                        <div class="contact-item">
+                            <img src="images/address-blue.png" alt="Address">
+                            <p>1234 Steel Avenue, Metaltown, USA</p>
+                        </div>
+                    </div>
+
                 <!-- Form -->
                 <form action="https://formsubmit.co/e21af56276f202ce8918c6c09852f23d" method="POST" id="contact-form">
                     <div class="row gtr-uniform gtr-50">
@@ -233,7 +317,7 @@
                     <input type="hidden" name="_autoresponse" value="Thank you for your message. We will get back to you soon.">
                     <input type="hidden" name="_template" value="table">
                 </form>
-
+                </div>
             </div>
         </div>
 
