@@ -24,18 +24,25 @@
         }
         .intro-paragraph {
             text-align: center;
-            margin: 0 auto 160px; /* Increased bottom margin */
+            margin: 0 auto 160px;
             max-width: 800px;
             font-size: 1.2em;
         }
         .content-section {
             display: flex;
             flex-direction: column;
-            gap: 160px; /* Increased gap between rows */
+            gap: 160px;
         }
         .content-item {
             display: flex;
             gap: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .content-item:hover {
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
         }
         .content-item:nth-child(even) {
             flex-direction: row-reverse;
@@ -55,6 +62,10 @@
             object-fit: cover;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .content-item img:hover {
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
         }
         .support-list {
             list-style-type: none;
@@ -72,8 +83,15 @@
             color: #0071ce;
         }
         .quote-section {
-            margin: 160px 0; /* Increased top and bottom margin */
+            margin: 160px 0;
             text-align: left;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .quote-section:hover {
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
         }
         .quote-section h2 {
             font-size: 2em;
@@ -91,7 +109,7 @@
             background-color: #272833;
             color: white;
             padding: 40px 20px;
-            margin-top: 160px; /* Increased top margin */
+            margin-top: 160px;
         }
         .footer-content {
             display: flex;
