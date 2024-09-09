@@ -1,0 +1,329 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Steel Reinforcing Bar Processing - ASI</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        body, html {
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .page-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .page-heading h1 {
+            margin-top: 5%;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .intro-paragraph {
+            text-align: center;
+            margin: 0 auto 40px;
+            max-width: 800px;
+            font-size: 1.2em;
+        }
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .landscape-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            margin-bottom: 40px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .landscape-image:hover {
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+        }
+        .content-wrapper {
+            display: flex;
+            gap: 40px;
+        }
+        .text-content {
+            flex: 1;
+        }
+        .content-item {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .content-item:hover {
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+        }
+        .content-item h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+        }
+        .process-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .process-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .process-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #ffffff;
+        }
+        .image-container {
+            flex: 0 0 40%;
+            max-width: 40%;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .image-container img:hover {
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+        }
+        .quote-section {
+            margin: 40px 0;
+            text-align: left;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .quote-section:hover {
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+        }
+        .quote-section h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .quote-section p {
+            margin-bottom: 20px;
+        }
+        #contact-form {
+            max-width: 1200px;
+            margin: 0;
+            text-align: left;
+        }
+        .main-footer {
+            background-color: #272833;
+            color: white;
+            padding: 40px 20px;
+            margin-top: 40px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .main-footer .copyright {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.8em;
+            text-align: center;
+        }
+        .main-footer .copyright li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .main-footer img {
+            max-height: 60px;
+        }
+        .main-footer .contact-info {
+            text-align: right;
+        }
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            .image-container {
+                flex: 1;
+                max-width: 100%;
+                margin-top: 20px;
+            }
+            .image-container img {
+                max-height: 300px;
+            }
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .main-footer .copyright,
+            .main-footer .contact-info {
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+        .highlight {
+            color: #0071ce;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="is-preload landing">
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a href="index.html"><img src="images/ASI.png" alt="ASI Logo" style="width: 100px; height: auto;"></a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li>
+                        <a href="products.html">Products</a>
+                        <ul>
+                            <li><a href="bar.html">Steel Reinforcing Bar</a></li>
+                            <li><a href="fabrication.html">Steel Fabrication</a></li>
+                            <li><a href="mesh.html">Steel Mesh</a></li>
+                            <li><a href="tools.html">Tools & Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li>
+                        <a href="services.html">Services</a>
+                        <ul>
+                            <li><a href="processing.html">Processing Bar</a></li>
+                            <li><a href="fabrication.html">Steel Fabrication</a></li>
+                            <li><a href="support.html">Technical Support</a></li>
+                            <li><a href="delivery.html">Materials Delivery</a></li>
+                            <li><a href="planning.html">Plan Scheduling</a></li>    
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" class="button primary">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Page Heading -->
+        <div class="page-heading">
+            <h1>Processing Bar</h1>
+        </div>
+
+        <!-- Introductory Paragraph -->
+        <div class="intro-paragraph">
+            <p>At ASI, we offer state-of-the-art steel reinforcing bar processing services, providing precision cutting and shaping to meet your exact specifications.</p>
+        </div>
+
+        <!-- Content Section -->
+        <section class="content-section">
+            <img src="images/construction-site-silhouettes.jpg" alt="Steel Bar Processing" class="landscape-image">
+            
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <div class="content-item">
+                        <h3>Our Processing Services</h3>
+                        <p>We offer a comprehensive range of steel reinforcing bar processing services, including:</p>
+                        <ul class="process-list">
+                            <li><span class="highlight">Precision Cutting</span>: Custom lengths to fit your project needs</li>
+                            <li><span class="highlight">Bending</span>: Accurate shaping for complex structural requirements</li>
+                            <li><span class="highlight">Threading</span>: For specialized connections and joints</li>
+                            <li><span class="highlight">Welding</span>: Joining bars for reinforced structures</li>
+                            <li><span class="highlight">Coating</span>: Corrosion protection for extended durability</li>
+                            <li><span class="highlight">Bundle Preparation</span>: Organized for efficient on-site handling</li>
+                        </ul>
+                    </div>
+                    <div class="content-item">
+                        <h3>Quality Assurance</h3>
+                        <p>Our processing services adhere to the highest industry standards:</p>
+                        <ul class="process-list">
+                            <li>Strict <span class="highlight">quality control</span> measures</li>
+                            <li>Advanced <span class="highlight">processing equipment</span> for precision</li>
+                            <li><span class="highlight">Experienced technicians</span> ensuring accuracy</li>
+                            <li><span class="highlight">Compliance</span> with relevant building codes and regulations</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="images/crane-construction-building-removebg.png" alt="Quality Control">
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <h2>Request a Quote</h2>
+            <p>Interested in our steel reinforcing bar processing services? Submit the form below, and our team will provide a customized quote based on your project requirements.</p>
+            
+            <form action="https://formsubmit.co/e21af56276f202ce8918c6c09852f23d" method="POST" id="contact-form">
+                <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                    <div style="flex: 1 1 40%; min-width: 200px;">
+                        <input type="text" name="name" id="name" placeholder="Name" required style="width: 100%;" />
+                    </div>
+                    <div style="flex: 1 1 40%; min-width: 200px;">
+                        <input type="email" name="email" id="email" placeholder="Email" required style="width: 100%;" />
+                    </div>
+                    <div style="flex: 1 1 40%; min-width: 200px;">
+                        <input type="text" name="phone" id="phone" placeholder="Phone (Optional)" style="width: 100%;" />
+                    </div>
+                    <div style="flex: 1 1 40%; min-width: 200px;">
+                        <input type="text" name="company" id="company" placeholder="Company (Optional)" style="width: 100%;" />
+                    </div>
+                    <div style="flex: 1 1 100%;">
+                        <textarea name="message" id="message" placeholder="Please describe your processing requirements" rows="4" required style="width: 100%;"></textarea>
+                    </div>
+                    <div style="flex: 1 1 100%;">
+                        <ul class="actions" style="display: flex; gap: 10px; padding: 0; list-style: none;">
+                            <li><input type="submit" value="Get Quote" class="primary" /></li>
+                            <li><input type="reset" value="Reset Form" /></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Hidden inputs for FormSubmit configuration -->
+                <input type="hidden" name="_next" value="http://127.0.0.1:5502/slide/thankyou.html">
+                <input type="hidden" name="_subject" value="New Bar Processing Quote Request from ASI Website">
+                <input type="hidden" name="_autoresponse" value="Thank you for your quote request. Our team will review your requirements and get back to you shortly.">
+                <input type="hidden" name="_template" value="table">
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div>
+                <img src="images/welder.png" alt="Company Logo">
+            </div>
+            <div>
+                <ul class="copyright">
+                    <li>&copy; Ace Steel Innovations. All rights reserved.</li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <p>
+                    Address: 1234 Steel Avenue, Metaltown, USA<br>
+                    Phone: (123) 456-7890<br>
+                    Email: info@acesteel.com
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
