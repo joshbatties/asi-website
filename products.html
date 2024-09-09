@@ -133,11 +133,13 @@
     padding-bottom: 100%; /* This creates a square aspect ratio */
     position: relative;
     overflow: hidden;
-    transition: transform 0.3s ease; /* Add transition for smooth zoom effect */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Add white box shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for box-shadow */
 }
 
 #products .product-box:hover {
     transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); /* Enhance shadow on hover */
 }
 
 #products .product-content {
@@ -196,6 +198,20 @@
         width: 100%;
     }
 }
+
+#products .products-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 120px; /* Add padding at the bottom */
+}
+
+/* For mobile screens, you might want to reduce the padding */
+@media screen and (max-width: 736px) {
+    #products .products-container {
+        padding-bottom: 80px;
+    }
+}
 </style>
 </head>
 <body class="is-preload landing">
@@ -244,7 +260,7 @@
                     <div class="product-box" style="background-image: url('images/rebar.jpg');">
                         <div class="product-content">
                             <h3>Steel Reinforcing Bar</h3>
-                            <a href="bar.html" class="button">Learn More →</a>
+                            <a href="bar.html" class="button">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -252,7 +268,7 @@
                     <div class="product-box" style="background-image: url('images/fabrication.jpg');">
                         <div class="product-content">
                             <h3>Steel Fabrication</h3>
-                            <a href="fabrication.html" class="button">Learn More →</a>
+                            <a href="fabrication.html" class="button">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -260,7 +276,7 @@
                     <div class="product-box" style="background-image: url('images/mesh.jpg');">
                         <div class="product-content">
                             <h3>Steel Mesh</h3>
-                            <a href="mesh.html" class="button">Learn More →</a>
+                            <a href="mesh.html" class="button">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -268,7 +284,7 @@
                     <div class="product-box" style="background-image: url('images/accessories.jpeg');">
                         <div class="product-content">
                             <h3>Tools & Accessories</h3>
-                            <a href="tools.html" class="button">Learn More →</a>
+                            <a href="tools.html" class="button">Learn More</a>
                         </div>
                     </div>
                 </div>
