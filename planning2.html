@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Plan Scheduling - ASI</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        body, html {
+            background-color: black;
+            color: white;
+        }
+        .page-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .page-heading h1 {
+            margin-top: 5%;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .intro-paragraph {
+            text-align: center;
+            margin: 0 auto 160px;
+            max-width: 800px;
+            font-size: 1.2em;
+        }
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            gap: 160px;
+        }
+        .content-item {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .content-item:hover {
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+        }
+        .content-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .content-text, .content-image {
+            width: calc(50% - 20px);
+        }
+        .content-item h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+        }
+        .content-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .content-item img:hover {
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+        }
+        .plan-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .plan-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .plan-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #0071ce;
+        }
+        .quote-section {
+            margin: 160px 0;
+            text-align: left;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .quote-section:hover {
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+        }
+        .quote-section h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .quote-section p {
+            margin-bottom: 20px;
+        }
+        #contact-form {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .main-footer {
+            background-color: #272833;
+            color: white;
+            padding: 40px 20px;
+            margin-top: 160px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .main-footer .copyright {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.8em;
+            text-align: center;
+        }
+        .main-footer .copyright li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .main-footer img {
+            max-height: 60px;
+        }
+        .main-footer .contact-info {
+            text-align: right;
+        }
+        @media (max-width: 768px) {
+            .content-item, .content-item:nth-child(even) {
+                flex-direction: column;
+            }
+            .content-text, .content-image {
+                width: 100%;
+            }
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .main-footer .copyright,
+            .main-footer .contact-info {
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body class="is-preload landing">
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a href="index.html"><img src="images/ASI.png" alt="ASI Logo" style="width: 100px; height: auto;"></a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li>
+                        <a href="products.html">Products</a>
+                        <ul>
+                            <li><a href="bar.html">Steel Reinforcing Bar</a></li>
+                            <li><a href="fabrication.html">Steel Fabrication</a></li>
+                            <li><a href="mesh.html">Steel Mesh</a></li>
+                            <li><a href="tools.html">Tools & Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li>
+                        <a href="services.html">Services</a>
+                        <ul>
+                            <li><a href="processing.html">Processing Bar</a></li>
+                            <li><a href="fabrication.html">Steel Fabrication</a></li>
+                            <li><a href="support.html">Technical Support</a></li>
+                            <li><a href="delivery.html">Materials Delivery</a></li>
+                            <li><a href="planning.html">Plan Scheduling</a></li>    
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" class="button primary">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Page Heading -->
+        <div class="page-heading">
+            <h1>Plan Scheduling</h1>
+        </div>
+
+        <!-- Introductory Paragraph -->
+        <div class="intro-paragraph">
+            <p>Our expert team provides detailed reinforcement schedules, annotated plans, and precise estimations of reinforcement products based on architectural drawings for all projects, ensuring efficiency and accuracy from start to finish.</p>
+        </div>
+
+        <!-- Content Section -->
+        <section class="content-section">
+            <div class="content-item">
+                <div class="content-text">
+                    <h3>Detailed Reinforcement Schedules</h3>
+                    <p>Our reinforcement schedules provide a comprehensive breakdown of all reinforcement requirements for your project:</p>
+                    <ul class="plan-list">
+                        <li>Precise bar sizes, lengths, and quantities</li>
+                        <li>Bending schedules for complex shapes</li>
+                        <li>Clear identification of different steel grades</li>
+                        <li>Organized by structural elements (e.g., columns, beams, slabs)</li>
+                    </ul>
+                </div>
+                <div class="content-image">
+                    <img src="/api/placeholder/400/250" alt="Reinforcement Schedules">
+                </div>
+            </div>
+
+            <div class="content-item">
+                <div class="content-text">
+                    <h3>Annotated Plans</h3>
+                    <p>Our expertly annotated plans provide clear and concise information for efficient on-site execution:</p>
+                    <ul class="plan-list">
+                        <li>Detailed reinforcement layouts</li>
+                        <li>Clear labeling of bar placements and spacings</li>
+                        <li>Identification of critical structural details</li>
+                        <li>Cross-referencing with reinforcement schedules</li>
+                    </ul>
+                </div>
+                <div class="content-image">
+                    <img src="/api/placeholder/400/250" alt="Annotated Plans">
+                </div>
+            </div>
+
+            <div class="content-item">
+                <div class="content-text">
+                    <h3>Reinforcement Product Estimation</h3>
+                    <p>We provide accurate estimations of reinforcement products based on your architectural drawings:</p>
+                    <ul class="plan-list">
+                        <li>Detailed quantity take-offs</li>
+                        <li>Optimization of bar lengths to minimize waste</li>
+                        <li>Consideration of splice lengths and development requirements</li>
+                        <li>Recommendations for cost-effective reinforcement solutions</li>
+                    </ul>
+                </div>
+                <div class="content-image">
+                    <img src="/api/placeholder/400/250" alt="Product Estimation">
+                </div>
+            </div>
+
+            <div class="content-item">
+                <div class="content-text">
+                    <h3>Comprehensive Project Support</h3>
+                    <p>Our plan scheduling service goes beyond just paperwork:</p>
+                    <ul class="plan-list">
+                        <li>Collaboration with your design team to ensure accuracy</li>
+                        <li>Regular updates to reflect design changes</li>
+                        <li>On-site support for interpretation of schedules and plans</li>
+                        <li>Integration with our material delivery and fabrication services</li>
+                    </ul>
+                </div>
+                <div class="content-image">
+                    <img src="/api/placeholder/400/250" alt="Project Support">
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <h2>Request a Plan Scheduling Quote</h2>
+            <p>Need expert assistance with plan scheduling for your project? Fill out the form below, and our team will provide you with a customized quote based on your specific requirements.</p>
+            
+            <form action="https://formsubmit.co/e21af56276f202ce8918c6c09852f23d" method="POST" id="contact-form">
+                <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                    <div style="flex: 1 1 calc(50% - 10px); min-width: 200px;">
+                        <input type="text" name="name" id="name" placeholder="Name" required style="width: 100%;" />
+                    </div>
+                    <div style="flex: 1 1 calc(50% - 10px); min-width: 200px;">
+                        <input type="email" name="email" id="email" placeholder="Email" required style="width: 100%;" />
+                    </div>
+                    <div style="flex: 1 1 calc(50% - 10px); min-width: 200px;">
+                        <input type="text" name="phone" id="phone" placeholder="Phone (Optional)" style="width: 100%;" />
+                    </div>
+                    <div style="flex: 1 1 calc(50% - 10px); min-width: 200px;">
+                        <input type="text" name="company" id="company" placeholder="Company (Optional)" style="width: 100%;" />
+                    </div>
+                    <div style="flex: 1 1 100%;">
+                        <textarea name="message" id="message" placeholder="Please describe your project and plan scheduling needs" rows="4" required style="width: 100%;"></textarea>
+                    </div>
+                    <div style="flex: 1 1 100%;">
+                        <ul class="actions" style="display: flex; gap: 10px; padding: 0; list-style: none;">
+                            <li><input type="submit" value="Get Plan Scheduling Quote" class="primary" /></li>
+                            <li><input type="reset" value="Reset Form" /></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Hidden inputs for FormSubmit configuration -->
+                <input type="hidden" name="_next" value="http://127.0.0.1:5502/slide/thankyou.html">
+                <input type="hidden" name="_subject" value="New Plan Scheduling Quote Request from ASI Website">
+                <input type="hidden" name="_autoresponse" value="Thank you for your plan scheduling quote request. Our team will review your requirements and get back to you shortly.">
+                <input type="hidden" name="_template" value="table">
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div>
+                <img src="images/welder.png" alt="Company Logo">
+            </div>
+            <div>
+                <ul class="copyright">
+                    <li>&copy; Ace Steel Innovations. All rights reserved.</li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <p>
+                    Address: 1234 Steel Avenue, Metaltown, USA<br>
+                    Phone: (123) 456-7890<br>
+                    Email: info@acesteel.com
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

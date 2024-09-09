@@ -37,6 +37,13 @@
             display: flex;
             align-items: center;
             gap: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .content-item:hover {
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
         }
         .content-item:nth-child(even) {
             flex-direction: row-reverse;
@@ -56,6 +63,10 @@
             object-fit: cover;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .content-item img:hover {
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
         }
         .delivery-list {
             list-style-type: none;
@@ -75,6 +86,13 @@
         .quote-section {
             margin: 160px 0;
             text-align: left;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .quote-section:hover {
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
         }
         .quote-section h2 {
             font-size: 2em;
