@@ -151,6 +151,31 @@
                 text-align: center;
             }
         }
+
+        @media (max-width: 768px) {
+            .page-heading h1 {
+                margin-top: 80px; /* Bring the heading down on mobile */
+                font-size: 2em; /* Adjust the font size for smaller screens */
+            }
+
+            .intro-paragraph {
+                margin-bottom: 20px; /* Reduce the space after the intro paragraph */
+            }
+
+            .content-item {
+                margin-bottom: 10px; /* Half the space between content items */
+            }
+
+            .content-item img {
+                margin-bottom: 10px; /* Reduce space below images */
+                height: 200px; /* Adjust image height for mobile */
+            }
+
+            .quote-section {
+                margin-top: 80px; /* Half the space above the contact form */
+                margin-bottom: 80px; /* Optionally reduce bottom margin for consistency */
+            }
+        }
     </style>
 </head>
 <body class="is-preload landing">
