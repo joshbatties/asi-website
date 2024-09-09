@@ -32,6 +32,7 @@
             padding: 20px;
             background-color: #272833;
             color: white;
+            margin-top: 4em;
         }
 
         .main-footer .copyright {
@@ -102,7 +103,7 @@
 
             .main-footer .contact-info {
                 text-align: left;
-                margin-top: 1em;
+                margin-top: 2em;
             }
         }
 
@@ -147,6 +148,12 @@
             opacity: 0;
             transform: translateX(50px);
             transition: opacity 0.5s ease, transform 0.5s ease;
+            box-shadow: 0 8px 16px rgba(0, 113, 206, 0.5); /* #0071ce with 30% opacity */
+            transition: box-shadow 0.3s ease, opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .about-section:hover {
+            box-shadow: 0 16px 32px rgba(0, 113, 206, 0.6); /* #0071ce with 50% opacity on hover */
         }
 
         .about-section:nth-child(even) {
