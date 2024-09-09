@@ -461,6 +461,91 @@ body, html {
         color: #0071ce;
     }
 
+    @media screen and (min-width: 737px) {
+    #four .last-line-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #four .last-line-container p {
+        margin: 0;
+    }
+
+    #four .last-line-container .major {
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    #four .actions {
+        margin: 0;
+    }
+
+    #four .actions li {
+        padding: 0;
+    }
+
+    #four .actions .button {
+        margin: 0;
+        height: 2.75em;
+        line-height: 2.75em;
+        padding: 0 1.5em;
+    }
+}
+
+/* Preserve existing mobile styles */
+@media screen and (max-width: 736px) {
+    #four .major {
+        margin-top: -40px;
+    }
+}
+
+@media screen and (min-width: 737px) {
+    #four .content {
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+        padding: 20px;
+        border-radius: 10px;
+        transition: box-shadow 0.3s ease;
+    }
+
+    #four .content:hover {
+        box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #four .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #four img {
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* For all screen sizes */
+#four img {
+    border-radius: 10px; /* Rounds the corners slightly */
+}
+
+/* For mobile screens */
+@media screen and (max-width: 736px) {
+    #four img {
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+        transition: box-shadow 0.3s ease;
+    }
+
+    #four img:hover {
+        box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+    }
+}
+
     
     </style>
 </head>
@@ -520,12 +605,14 @@ body, html {
                         <h3>Ace Steel Innovations: Building for the Future</h3>
                         <p>Innovation drives every project we undertake at ASI. This drive ensures we consistently deliver exceptional quality.</p>
                         <p>Our commitment goes beyond building the highest quality steel structures; we create strong relationships with our clients through our professional, friendly, and dependable approach, coupled with innovative solutions and swift adaptability.</p>
-                        <p>We look forward to working with you on your next project.</p>
-                        <footer class="major" style="margin-top: -40px;"> <!-- Adjust margin-top to move the button upwards -->
-                            <ul class="actions special">
-                                <li><a href="about.html" class="button">Read more</a></li>
-                            </ul>
-                        </footer>
+                        <div class="last-line-container">
+                            <p>We look forward to working with you on your next project.</p>
+                            <footer class="major">
+                                <ul class="actions special">
+                                    <li><a href="about.html" class="button">Read more</a></li>
+                                </ul>
+                            </footer>
+                        </div>
                     </div>
                 </div>
             </div>
