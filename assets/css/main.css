@@ -283,7 +283,7 @@ input, select, textarea {
 		}
 
 		99% {
-			color: #1c1d26;
+			color: #000000c3;
 			z-index: 100001;
 			-moz-transform: scale(0.5) rotate(360deg);
 			-webkit-transform: scale(0.5) rotate(360deg);
@@ -292,7 +292,7 @@ input, select, textarea {
 		}
 
 		100% {
-			color: #1c1d26;
+			color: #000000c3;
 			z-index: -1;
 			-moz-transform: scale(0.5) rotate(360deg);
 			-webkit-transform: scale(0.5) rotate(360deg);
@@ -312,7 +312,7 @@ input, select, textarea {
 		}
 
 		99% {
-			color: #1c1d26;
+			color: #000000c3;
 			z-index: 100001;
 			-moz-transform: scale(0.5) rotate(360deg);
 			-webkit-transform: scale(0.5) rotate(360deg);
@@ -321,7 +321,7 @@ input, select, textarea {
 		}
 
 		100% {
-			color: #1c1d26;
+			color: #000000c3;
 			z-index: -1;
 			-moz-transform: scale(0.5) rotate(360deg);
 			-webkit-transform: scale(0.5) rotate(360deg);
@@ -341,7 +341,7 @@ input, select, textarea {
 		}
 
 		99% {
-			color: #1c1d26;
+			color: rgba(0, 0, 0, 0.75);
 			z-index: 100001;
 			-moz-transform: scale(0.5) rotate(360deg);
 			-webkit-transform: scale(0.5) rotate(360deg);
@@ -350,7 +350,7 @@ input, select, textarea {
 		}
 
 		100% {
-			color: #1c1d26;
+			color: rgba(0, 0, 0, 0.75);
 			z-index: -1;
 			-moz-transform: scale(0.5) rotate(360deg);
 			-webkit-transform: scale(0.5) rotate(360deg);
@@ -3082,7 +3082,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 			transition: transform 1s ease, opacity 1s ease;
-			background: rgba(23, 24, 32, 0.95);
+			background: rgba(0, 0, 0, 0.8);
 			border-style: solid;
 			opacity: 1;
 			position: absolute;
@@ -3146,7 +3146,7 @@ input, select, textarea {
 		}
 
 		.spotlight.style3 .content {
-			border-color: #0d0046;
+			border-color: #0071ce;
 		}
 
 		.spotlight.inactive .content {
@@ -3312,7 +3312,7 @@ input, select, textarea {
 /* Dropotron */
 
 	.dropotron {
-		background: rgba(39, 40, 51, 0.965);
+		background: rgba(0, 0, 0, 0.7);
 		border-radius: 4px;
 		box-shadow: 0 0.075em 0.35em 0 rgba(0, 0, 0, 0.125);
 		list-style: none;
@@ -3352,7 +3352,7 @@ input, select, textarea {
 				-webkit-transform: rotate(45deg);
 				-ms-transform: rotate(45deg);
 				transform: rotate(45deg);
-				background: #272833;
+				background: #000000;
 				content: '';
 				display: block;
 				height: 1em;
@@ -3373,7 +3373,7 @@ input, select, textarea {
 	}
 
 	#header {
-		background: rgba(39, 40, 51, 0.965);
+		background: rgba(0, 0, 0, 0.965);
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
 		cursor: default;
 		height: 3.5em;
@@ -3737,7 +3737,7 @@ input, select, textarea {
 				}
 
 				.spotlight .content {
-					background-color: #1c1d26;
+					background-color: black;
 					border-width: 0 !important;
 					border-top-width: 0.35em !important;
 					bottom: auto !important;
@@ -3950,8 +3950,7 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: #272833;
-				box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+				background: transparent;
 			}
 
 				#titleBar .title {
@@ -3993,7 +3992,6 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #0071ce;
 						color: rgba(255, 255, 255, 0.5);
 						content: '\f0c9';
 						display: block;
@@ -4028,7 +4026,7 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #181920;
+				background: black;
 				padding: 0.75em 1.25em;
 			}
 
@@ -4198,4 +4196,36 @@ footer.major {
     display: flex;
     justify-content: center;
     margin-top: -40px; /* Adjust margin to move the button upwards */
+}
+
+#titleBar {
+    background: transparent;
+    box-shadow: none;
+}
+
+#titleBar .toggle:before {
+    background: transparent;
+}
+
+#titleBar {
+    background-color: transparent !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+#titleBar:before, #titleBar:after {
+    background: transparent !important;
+}
+
+#titleBar .title {
+    background-color: transparent !important;
+}
+
+#titleBar .toggle {
+    background-color: transparent !important;
+}
+
+#titleBar .toggle:before {
+    background: transparent !important;
+    color: #ffffff; /* Change this to your desired color for the menu icon */
 }
