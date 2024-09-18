@@ -2174,6 +2174,7 @@ input, select, textarea {
 		line-height: 1.5em;
 	}
 
+
 	header.major {
 		margin: 0 0 4em 0;
 		position: relative;
@@ -2188,6 +2189,8 @@ input, select, textarea {
 			max-width: 20em;
 			width: 75%;
 		}
+
+
 
 	footer.major {
 		margin: 4em 0 0 0;
