@@ -3532,7 +3532,7 @@ input, select, textarea {
 
 	#footer {
 		display: flex;
-		background: #272833;
+		background: black;
 		padding: 2em 1em;
 		text-align: center;
 		height: 6em;
@@ -3558,7 +3558,6 @@ input, select, textarea {
 			}
 
 			#footer .icons .icon.alt:before {
-				color: #272833 !important;
 				text-shadow: 1px 0 0 rgba(255, 255, 255, 0.5), -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.5);
 			}
 
