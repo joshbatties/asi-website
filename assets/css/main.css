@@ -78,7 +78,7 @@ input, select, textarea {
 	}
 
 	html, body {
-		background: #1c1d26;
+		background: #000000;
 	}
 
 	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -588,7 +588,7 @@ input, select, textarea {
 			-webkit-animation: overlay-hide 1.5s ease-in forwards !important;
 			-ms-animation: overlay-hide 1.5s ease-in forwards !important;
 			animation: overlay-hide 1.5s ease-in forwards !important;
-			background: #1c1d26;
+			background: #000000;
 			content: '';
 			display: block;
 			height: 100%;
