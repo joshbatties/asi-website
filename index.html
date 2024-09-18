@@ -28,11 +28,7 @@ body, html {
             width: 50%;
             max-width: 600px;
         }
-        #banner h2 {
-            font-size: 60px;
-            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-            margin-bottom: 20px;
-        }
+
         #banner p {
             font-size: 18px;
             font-style: italic;
@@ -52,14 +48,14 @@ body, html {
         
         @media screen and (max-width: 768px) {
             #banner .content {
-                top: 15%;
+                top: 5%;
                 left: 50%;
                 transform: translate(-50%, 0);
                 text-align: center;
                 width: 90%;
             }
             #banner h2 {
-                font-size: 50px; /* Increased from 40px to 50px */
+                font-size: 60px; /* Increased from 40px to 50px */
             }
             #banner p {
                 font-size: 16px;
@@ -650,6 +646,25 @@ body, html {
         #services .service-item {
             color: inherit; /* Inherits the default text color */
         }
+
+        .main-header {
+            font-size: 5rem;
+            background: linear-gradient(to bottom right, #ffffff 50%, #0071ce 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 8px rgba(0, 113, 206, 0.2); /* Soft shadow */
+            letter-spacing: -2px; /* Slightly increased letter spacing */
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease, text-shadow 0.3s ease;
+            }
+
+            .main-header:hover {
+            transform: scale(1.01); /* Subtle scale effect on hover */
+            text-shadow: 4px 4px 12px rgba(0, 113, 206, 0.4); /* Enhanced shadow on hover */
+            }
+        
+
     
     </style>
 </head>
@@ -690,7 +705,7 @@ body, html {
         <section id="banner">
             <img src="images/home.png" alt="Ace Steel Innovations">
             <div class="content">
-                <h2>Ace Steel Innovations</h2>
+                <h2 class="main-header">Ace Steel Innovations</h2>
                 <p>Proudly supplying the Australian market with innovative steel solutions since 2016.</p>
                 <a href="contact.html" class="button">Get a quote</a>
             </div>
