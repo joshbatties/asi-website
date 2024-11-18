@@ -718,7 +718,30 @@ body, html {
     justify-content: space-between; /* Ensure image is left and .copyright is center */
     align-items: center; /* Vertically center the items */
 }
+#header nav ul li.mobile-only-nav {
+    display: none !important;
+}
 
+@media screen and (max-width: 730px) {
+    #header nav ul li.mobile-only-nav {
+        display: inline-block !important;
+        margin-left: 1em;
+    }
+}
+
+@media screen and (min-width: 981px) {
+    #header > nav > ul > li > a {
+        transform: scale(1.2);
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #header h1#logo a img {
+        width: 20px !important;
+        height: auto !important;
+    }
+}
     
     </style>
 </head>
@@ -727,9 +750,10 @@ body, html {
 
         <!-- Header -->
         <header id="header">
-            <h1 id="logo"><a href="index.html"><img src="images/transparent-white.png" style="width: 100px; height: auto;"></a></h1>
+            <h1 id="logo"><a href="index.html"><img src="images/transparent-white.png" style="width: 80px; height: auto;"></a></h1>
             <nav id="nav">
                 <ul>
+                    <li class="mobile-only-nav"><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li>
                         <a href="products.html">Products</a>
@@ -919,9 +943,9 @@ body, html {
                 <div class="content">
                     <header>
                         <h2>Midnight</h2>
-                        <p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+                        <p>1 Elouera Street, Braddon</p>
                     </header>
-                    <p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+                    <p>ASI supplied high-quality structural steel in the construction of this hotel in the heart of Canberra.</p>
                 </div>
                 <a href="#two" class="goto-next scrolly">Next</a>
             </section>
@@ -931,9 +955,9 @@ body, html {
                 <div class="content">
                     <header>
                         <h2>220 George Street</h2>
-                        <p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+                        <p>Commercial tower in the Sydney CBD</p>
                     </header>
-                    <p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+                    <p>ASI is a key supplier of structural steel for this ongoing project.</p>
                 </div>
                 <a href="#three" class="goto-next scrolly">Next</a>
             </section>
@@ -944,9 +968,9 @@ body, html {
                 <div class="content">
                     <header>
                         <h2>Quay Quarter</h2>
-                        <p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+                        <p>50 Bridge Street, Sydney</p>
                     </header>
-                    <p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+                    <p>ASI was a proud supplier in the redevelopment of this now 54 floor skyscraper.</p>
                 </div>
             </section>
 
