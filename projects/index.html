@@ -1,0 +1,819 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Projects - ASI</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/footer.css" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+    <style>
+        body, html {
+            background-color: black;
+        }
+
+       .second-footer {
+            display: none; /* Initially hide the second footer */
+            padding: 10px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        .show-footer {
+            display: block; /* Show the second footer */
+        }
+
+        .main-footer {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center; /* Ensure all items are aligned to the same height */
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #272833;
+            color: white;
+        }
+
+        .main-footer .copyright {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.8em;
+            line-height: 1em;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .main-footer .copyright li {
+            border-left: solid 1px rgba(255, 255, 255, 0.3);
+            display: inline-block;
+            list-style: none;
+            margin-left: 1.5em;
+            padding-left: 1.5em;
+        }
+
+        .main-footer .copyright li:first-child {
+            border-left: 0;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        .main-footer .copyright li a {
+            color: inherit;
+        }
+
+        .main-footer p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-footer div:first-child {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align image to the left */
+            padding-left: 1em; /* Add padding to move the image further left */
+        }
+
+        .main-footer img {
+            max-height: 60px;
+        }
+
+        .main-footer div:nth-child(2) {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-footer div:nth-child(3) {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-right: 1em;
+        } 
+
+        @media (max-width: 768px) {
+            .main-footer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .main-footer .contact-info {
+                text-align: left;
+                margin-top: 1em;
+            }
+        }
+		@media screen and (min-width: 981px) {
+    #zero {
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    #zero .video-container {
+        height: 100vh !important;
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    #zero .content {
+        position: absolute !important;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 28em;
+        padding: 6em 3em !important;
+        border-left: 0.35em solid #0071ce;
+    }
+}
+
+    </style>
+</head>
+<body class="is-preload landing">
+    <div  id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a href="../"><img src="../images/white.png" style="width: 100px; height: auto;"></a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="../about/">About</a></li>
+                    <li>
+                        <a href="../products/">Products</a>
+                        <ul>
+                            <li><a href="../products/bar/">Steel Reinforcing Bar</a></li>
+                            <li><a href="../products/fabrication/">Steel Fabrication</a></li>
+                            <li><a href="../products/mesh/">Steel Mesh</a></li>
+                            <li><a href="../products/tools/">Tools & Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=#>Projects</a></li>
+                    <li>
+                        <a href="../services/">Services</a>
+                        <ul>
+                            <li><a href="../services/processing/">Processing Bar</a></li>
+                            <li><a href="../products/fabrication/">Steel Fabrication</a></li>
+                            <li><a href="../services/support/">Technical Support</a></li>
+                            <li><a href="../services/delivery/">Materials Delivery</a></li>
+                            <li><a href="../services/planning/">Plan Scheduling</a></li>    
+                        </ul>
+                    </li>
+                    <li><a href="../contact/" class="button primary">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section id="services" class="wrapper style1 special fade-up">
+                <div class="container">
+                    <header class="major">
+                        <h2>Our Projects</h2>
+                        <p>Browse some of our recent projects.</p>
+                    </header>
+                </div>
+            </section>
+        </main>
+
+		<section id="zero" class="spotlight style2 left">
+			<div class="video-container" style="width: 100%; height: 400px; overflow: hidden; position: relative;">
+				<video 
+					autoplay 
+					loop 
+					muted 
+					playsinline
+					preload="auto"
+					style="width: 100%; height: 100%; object-fit: cover; position: absolute;"
+				>
+					<source src="../images/WesternSydneyAirportSCAW.mp4" type="video/mp4" />
+					<source src="../images/WesternSydneyAirportSCAW.webm" type="video/webm" />
+					Your browser does not support the video tag.
+				</video>
+			</div>
+			<div class="content" style="position: relative; z-index: 2; padding: 2rem; background: rgba(0,0,0,0.5); color: white;">
+				<header>
+					<h2>Western Sydney Airport</h2>
+					<p>Surface and Civil Alignment Works</p>
+				</header>
+				<ul class="actions">
+					<li><a href="#" class="button">Watch More</a></li>
+				</ul>
+			</div>
+			<a href="#one" class="goto-next scrolly">Next</a>
+		</section>
+
+        <!-- One -->
+				<section id="one" class="spotlight style2 right">
+					<span class="image fit main"><img src="../images/FOUNDERSLANE1.jpeg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Founders Lane</h2>
+						</header>
+						<ul class="actions"></ul>
+					</div>
+					<a href="#two" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Two -->
+				<section id="two" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="../images/midnight1.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Midnight</h2>
+						</header>
+					</div>
+					<a href="#three" class="goto-next scrolly">Next</a>
+				</section>
+
+                <!-- Three -->
+				<section id="three" class="spotlight style2 right">
+					<span class="image fit main"><img src="../images/ANU3.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Australian National University S8</h2>
+							<p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#four" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Four -->
+				<section id="four" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="../images/CASTLE2.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Castle Residences</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#five" class="goto-next scrolly">Next</a>
+				</section>
+
+                <!-- Five -->
+				<section id="five" class="spotlight style3 right">
+					<span class="image fit main bottom"><img src="../images/KING6.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>160 King Street</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#six" class="goto-next scrolly">Next</a>
+				</section>
+
+                <!-- Six -->
+				<section id="six" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="../images/MARRICK2.jpeg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Marrickville Community Hub</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#seven" class="goto-next scrolly">Next</a>
+				</section>
+
+                <!-- Seven -->
+				<section id="seven" class="spotlight style3 right">
+					<span class="image fit main bottom"><img src="../images/PENNY1.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Penny Place</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#eight" class="goto-next scrolly">Next</a>
+				</section>
+
+                <!-- Eight -->
+				<section id="eight" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="../images/OMEGA3.webp" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Omega Apartments</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#nine" class="goto-next scrolly">Next</a>
+				</section>
+
+                <!-- Nine -->
+				<section id="nine" class="spotlight style3 right">
+					<span class="image fit main bottom"><img src="../images/GEORGE2.jpeg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>220 George Street</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#ten" class="goto-next scrolly">Next</a>
+				</section>
+
+                <!-- Ten -->
+                <section id="ten" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="../images/QUAY1.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Quay Quarter</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#eleven" class="goto-next scrolly">Next</a>
+				</section>
+
+                <!-- Eleven -->
+                <section id="eleven" class="spotlight style3 right">
+					<span class="image fit main bottom"><img src="../images/MAC.webp" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>79 Macquaire Street</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#twelve" class="goto-next scrolly">Next</a>
+				</section>
+
+                 <!-- Twelve -->
+                 <section id="twelve" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="../images/HOSPITAL2.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Goulburn Hospital</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#thirteen" class="goto-next scrolly">Next</a>
+				</section>
+
+                <!-- Thirteen -->
+                <section id="thirteen" class="spotlight style3 right">
+					<span class="image fit main bottom"><img src="../images/ORCHARDS2.avif" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Orchards Imperial</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#fourteen" class="goto-next scrolly">Next</a>
+				</section>
+
+                <!-- Fourteen -->
+                <section id="fourteen" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="../images/MILLER1.jpeg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>221 Miller Street</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#fifteen" class="goto-next scrolly">Next</a>
+				</section>
+
+                <!-- Fifteen -->
+                <section id="fifteen" class="spotlight style3 right">
+					<span class="image fit main bottom"><img src="../images/WATERLINE1.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Waterline Place</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#sixteen" class="goto-next scrolly">Next</a>
+				</section>
+
+                <!-- Sixteen -->
+                <section id="Sixteen" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="../images/BOTANIC.png" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Botanic Melbourne</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#seventeen" class="goto-next scrolly">Next</a>
+				</section>
+
+                <!-- Seventeen -->
+                <section id="seventeen" class="spotlight style3 right">
+					<span class="image fit main bottom"><img src="../images/MERCURE1.png" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Bunnings Mercure</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#eighteen" class="goto-next scrolly">Next</a>
+				</section>
+
+                <!-- Eighteen -->
+                <section id="eighteen" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="../images/NEXTDC.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>NEXTDC</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#nineteen" class="goto-next scrolly">Next</a>
+				</section>
+
+				<!-- Nineteen -->
+                <section id="nineteen" class="spotlight style3 right">
+					<span class="image fit main bottom"><img src="../images/VERON.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>49-51 Veron Street</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#twenty" class="goto-next scrolly">Next</a>
+				</section>
+
+				<!-- Twenty -->
+                <section id="twenty" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="../images/BONDI.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Bondi Central</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#twentyone" class="goto-next scrolly">Next</a>
+				</section>
+
+				<!-- Twenty One-->
+                <section id="twentyone" class="spotlight style3 right">
+					<span class="image fit main bottom"><img src="../images/CABRINI.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Cabrini Hospital</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#twentytwo" class="goto-next scrolly">Next</a>
+				</section>
+
+				<!-- Twenty Two-->
+                <section id="twentytwo" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="../images/COURTYARD.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>The Courtyard</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#twentythree" class="goto-next scrolly">Next</a>
+				</section>
+
+				<!-- Twenty Three-->
+                <section id="twentythree" class="spotlight style3 right">
+					<span class="image fit main bottom"><img src="../images/CHARSFIELD.jpeg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Charsfield</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#twentyfour" class="goto-next scrolly">Next</a>
+				</section>
+
+				<!-- Twenty Four-->
+                <section id="twentyfour" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="../images/WESTSIDE.webp" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>West Side Place</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#twentyfive" class="goto-next scrolly">Next</a>
+				</section>
+
+				<!-- Twenty Five-->
+                <section id="twentyfive" class="spotlight style3 right">
+					<span class="image fit main bottom"><img src="../images/VICPOL.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Victoria Police Centre</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#twentysix" class="goto-next scrolly">Next</a>
+				</section>
+
+				<!-- Twenty Six-->
+                <section id="twentysix" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="../images/EMBASSY.webp" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Embassy</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#twentyseven" class="goto-next scrolly">Next</a>
+				</section>
+
+				<!-- Twenty Seven-->
+                <section id="twentyseven" class="spotlight style3 right">
+					<span class="image fit main bottom"><img src="../images/SCAPE.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Scape Student Living</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#twentyeight" class="goto-next scrolly">Next</a>
+				</section>
+
+				<!-- Twenty Eight-->
+                <section id="twentyeight" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="../images/VICUNI2.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Victoria University City</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#twentynine" class="goto-next scrolly">Next</a>
+				</section>
+
+				<!-- Twenty Nine-->
+                <section id="twentynine" class="spotlight style3 right">
+					<span class="image fit main bottom"><img src="../images/HOME.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Home Southbank</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#thirty" class="goto-next scrolly">Next</a>
+				</section>
+
+				<!-- Thirty-->
+                <section id="thirty" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="../images/UNO.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>UNO Melbourne</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#thirtyone" class="goto-next scrolly">Next</a>
+				</section>
+
+				<!-- Thirty One-->
+                <section id="thirtyone" class="spotlight style3 right">
+					<span class="image fit main bottom"><img src="../images/FRANKSTON.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Frankston Hospital</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#thirtytwo" class="goto-next scrolly">Next</a>
+				</section>
+
+				<!-- Thirty Two-->
+                <section id="thirtytwo" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="../images/GEELONG.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Geelong Convention & Event Centre</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#thirtythree" class="goto-next scrolly">Next</a>
+				</section>
+
+				<!-- Thirty Three-->
+                <section id="thirtythree" class="spotlight style3 right">
+					<span class="image fit main bottom"><img src="../images/ALBERT.webp" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Albert Fields</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#thirtyfour" class="goto-next scrolly">Next</a>
+				</section>
+
+				<!-- Thirty Four-->
+                <section id="thirtyfour" class="spotlight style3 right">
+					<span class="image fit main bottom"><img src="../images/SKYSQR2.webp" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Sky Square</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#thirtyfive" class="goto-next scrolly">Next</a>
+				</section>
+
+				<!-- Thirty Four-->
+                <section id="thirtyfive" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="../images/m12.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>M12 Motorway</h2>
+							<p>ASI, as part of a joint venture, has been selected by the NSW Government to fabricate steel for the M12 Motorway.</p>
+						</header>
+					</div>
+				</section>
+
+
+
+
+        <!-- Footer -->
+		<footer class="footer">
+			<div class="glow-line"></div>
+			<div class="footer-content">
+				<div class="footer-top">
+					<div class="footer-logo">
+						<img src="../images/footer-logo.png" alt="Company Logo">
+					</div>
+					<div class="footer-contact-section">
+						<div class="footer-contact-row">
+							<img src="../images/email-blue.png" alt="Email" class="footer-icon">
+							<a href="mailto:info@acesteel.com">info@acesteel.com</a>
+						</div>
+						<div class="footer-contact-row">
+							<img src="../images/telephone-blue.png" alt="Phone" class="footer-icon">
+							<a href="tel:+11234567890">(123) 456-7890</a>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<p>&copy; 2024 Your Company Name. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/jquery.dropotron.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.addEventListener('scroll', function() {
+            const mainFooter = document.querySelector('.main-footer');
+            const secondFooter = document.getElementById('secondFooter');
+            const windowHeight = window.innerHeight;
+            const mainFooterRect = mainFooter.getBoundingClientRect();
+        
+            // Check if the user has scrolled to the bottom of the main footer
+            if (mainFooterRect.top < windowHeight && mainFooterRect.bottom <= windowHeight) {
+                // Add a wheel event listener to detect further scrolling down
+                window.addEventListener('wheel', detectFurtherScroll);
+            } else {
+                secondFooter.classList.remove('show-footer');
+                window.removeEventListener('wheel', detectFurtherScroll);
+            }
+        });
+        
+        function detectFurtherScroll(event) {
+            if (event.deltaY > 0) { // If the user scrolls down
+                const secondFooter = document.getElementById('secondFooter');
+                secondFooter.classList.add('show-footer');
+                // Remove the event listener to prevent multiple triggers
+                window.removeEventListener('wheel', detectFurtherScroll);
+            }
+        }
+    </script>
+</body>
+</html>
