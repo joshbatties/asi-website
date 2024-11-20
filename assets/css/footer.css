@@ -110,5 +110,18 @@
     .copyright {
         order: 2;
         margin: 0 auto;
+
+    }
+}
+
+@media screen and (min-width: 737px) {
+    .copyright {
+        margin-top: -80px;  
+    }
+}
+
+@media screen and (min-width: 737px) {
+    .footer-top {
+        align-items: flex-end;  
     }
 }
