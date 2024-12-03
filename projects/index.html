@@ -136,6 +136,23 @@
     }
 }
 
+.spotlight .desktop-media {
+    display: block;
+}
+.spotlight .mobile-media {
+    display: none;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .spotlight .desktop-media {
+        display: none !important;
+    }
+    .spotlight .mobile-media {
+        display: block;
+    }
+}
+
     </style>
 </head>
 <body class="is-preload landing">
@@ -333,10 +350,17 @@
 
                 <!-- Eleven -->
                 <section id="eleven" class="spotlight style3 right">
-					<span class="image fit main bottom"><img src="../images/MAC.webp" alt="" /></span>
+					<!-- Desktop image container -->
+					<span class="image fit main bottom desktop-media">
+						<img src="../images/MAC2 (1).webp" alt="79 Macquarie Street Development Desktop View" />
+					</span>
+					<!-- Mobile image container -->
+					<span class="image fit main bottom mobile-media">
+						<img src="../images/MAC.webp" alt="79 Macquarie Street Development Mobile View" />
+					</span>
 					<div class="content">
 						<header>
-							<h2>79 Macquaire Street</h2>
+							<h2>79 Macquarie Street</h2>
 							<p>Prominent new development in busy Circular Quay</p>
 						</header>
 					</div>
@@ -381,7 +405,14 @@
 
                 <!-- Fifteen -->
                 <section id="fifteen" class="spotlight style3 right">
-					<span class="image fit main bottom"><img src="../images/WATERLINE1.jpg" alt="" /></span>
+					<!-- Desktop image container -->
+					<span class="image fit main bottom desktop-media">
+						<img src="../images/WATERLINE2.jpg" alt="Waterline Place Development Desktop View" />
+					</span>
+					<!-- Mobile image container -->
+					<span class="image fit main bottom mobile-media">
+						<img src="../images/WATERLINE1.jpg" alt="Waterline Place Development Mobile View" />
+					</span>
 					<div class="content">
 						<header>
 							<h2>Waterline Place</h2>
@@ -429,7 +460,14 @@
 
 				<!-- Nineteen -->
                 <section id="nineteen" class="spotlight style3 right">
-					<span class="image fit main bottom"><img src="../images/VERON.jpg" alt="" /></span>
+					<!-- Desktop image container -->
+					<span class="image fit main bottom desktop-media">
+						<img src="../images/VERON2.jpg" alt="Veron Street Development Desktop View" />
+					</span>
+					<!-- Mobile image container -->
+					<span class="image fit main bottom mobile-media">
+						<img src="../images/VERON.jpg" alt="Veron Street Development Mobile View" />
+					</span>
 					<div class="content">
 						<header>
 							<h2>49-51 Veron Street</h2>
@@ -441,7 +479,14 @@
 
 				<!-- Twenty -->
                 <section id="twenty" class="spotlight style3 left">
-					<span class="image fit main bottom"><img src="../images/BONDI.jpg" alt="" /></span>
+					<!-- Desktop image container -->
+					<span class="image fit main bottom desktop-media">
+						<img src="../images/BONDI2.jpg" alt="Bondi Central Development Desktop View" />
+					</span>
+					<!-- Mobile image container -->
+					<span class="image fit main bottom mobile-media">
+						<img src="../images/BONDI.jpg" alt="Bondi Central Development Mobile View" />
+					</span>
 					<div class="content">
 						<header>
 							<h2>Bondi Central</h2>
@@ -585,11 +630,18 @@
 
 				<!-- Thirty Two-->
                 <section id="thirtytwo" class="spotlight style3 left">
-					<span class="image fit main bottom"><img src="../images/GEELONG.jpg" alt="" /></span>
+					<!-- Desktop image container -->
+					<span class="image fit main bottom desktop-media">
+						<img src="../images/GEELONG3.jpg" alt="Geelong Convention Centre Desktop View" />
+					</span>
+					<!-- Mobile image container -->
+					<span class="image fit main bottom mobile-media">
+						<img src="../images/GEELONG.jpg" alt="Geelong Convention Centre Mobile View" />
+					</span>
 					<div class="content">
 						<header>
 							<h2>Geelong Convention & Event Centre</h2>
-							<p> 1000-seat venue, exhibition spaces, a 200-room Crowne Plaza hotel, and a public plaza. Supported by local partnerships, it aims to create over 1,450 jobs during construction and 700 ongoing roles</p>
+							<p>1000-seat venue, exhibition spaces, a 200-room Crowne Plaza hotel, and a public plaza. Supported by local partnerships, it aims to create over 1,450 jobs during construction and 700 ongoing roles</p>
 						</header>
 					</div>
 					<a href="#thirtythree" class="goto-next scrolly">Next</a>
