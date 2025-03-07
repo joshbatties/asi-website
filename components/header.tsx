@@ -130,7 +130,7 @@ export default function Header() {
                 Home
               </Link>
             </li>
-            {navItems.map((item, index) => (
+            {navItems.map((item) => (
               <li key={item.label} className="py-5 relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-4/5 after:h-px after:bg-gradient-to-r after:from-transparent after:via-white/20 after:to-transparent after:shadow-[0_0_5px_rgba(255,255,255,0.2)]">
                 {!item.dropdown ? (
                   <Link
