@@ -24,7 +24,7 @@ const ProductCards: React.FC = () => {
     {
       id: 4,
       title: 'Tools & Accessories',
-      image: '/images/tools-accessories.jpg',
+      image: '/images/tools-accessories.jpeg',
     },
   ];
 

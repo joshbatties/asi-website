@@ -61,7 +61,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:block">
-            <ul className="flex space-x-4 items-center">
+            <ul className="flex space-x-1 items-center">
               {navItems.map((item) => (
                 <li
                   key={item.label}
