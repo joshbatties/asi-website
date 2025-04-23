@@ -34,10 +34,10 @@ const Hero = () => {
       <div className="relative z-10 h-full flex flex-col justify-start pt-8 md:pt-8 md:justify-center">
         <div className="container mx-auto px-4">
           <div className="text-center md:text-left md:max-w-lg md:ml-16">
-            <h1 className="text-7xl md:text-8xl lg:text-9xl font-light tracking-tight bg-gradient-to-br from-white from-30% via-white via-50% to-blue-600 text-transparent bg-clip-text mb-4">
+            <h1 className="text-7xl md:text-8xl lg:text-8.5xl font-light tracking-tighter bg-gradient-to-br from-white from-30% via-white via-50% to-blue-600 text-transparent bg-clip-text mb-4">
               Ace Steel Innovations
             </h1>
-            <p className="text-base md:text-lg text-gray-300 font-light italic mb-8">
+            <p className="text-sm md:text-sm text-gray-300 font-light italic mb-8">
               Proudly supplying the Australian market with innovative steel solutions
             </p>
             <div className="text-center md:text-left inline-block w-full md:w-auto">

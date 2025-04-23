@@ -1,7 +1,8 @@
-
 import Hero from '@/components/hero'
 import Introduction from '@/components/introduction'
 import ProductCards from '@/components/product-cards'
+import ServiceCards from '@/components/service-cards'
+import ContactForm from '@/components/contact-form'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -18,6 +19,8 @@ export default function Home() {
     <Hero />
     <Introduction />
     <ProductCards />
+    <ServiceCards />
+    <ContactForm />
     </>
   )
 }

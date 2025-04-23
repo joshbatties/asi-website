@@ -32,7 +32,7 @@ const Introduction: React.FC = () => {
             </div>
             
             {/* Content container */}
-            <div className="md:w-1/2 flex flex-col justify-center">
+            <div className="md:w-1/2 flex flex-col justify-start">
               <h3 className="text-2xl mb-4 bg-gradient-to-br from-white from-50% to-[#0071ce] to-100% bg-clip-text text-transparent">
                 Ace Steel Innovations: Building for the Future
               </h3>

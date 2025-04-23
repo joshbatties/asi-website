@@ -37,11 +37,11 @@ const ProductCards: React.FC = () => {
         <div className="w-56 h-0.5 bg-blue-500 mx-auto mb-16"></div>
         
         {/* Product Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:w-1/2 mx-auto">
           {products.map((product) => (
-            <div key={product.id} className="relative overflow-hidden group">
+            <div key={product.id} className="relative overflow-hidden group bg-black rounded-lg shadow-[0_8px_20px_rgba(150,150,150,0.3)] transition-all duration-300 hover:shadow-[0_12px_25px_rgba(200,200,200,0.4)]">
               {/* Product Card */}
-              <div className="relative h-96 w-full">
+              <div className="relative aspect-square w-full">
                 <Image
                   src={product.image}
                   alt={product.title}
@@ -52,7 +52,7 @@ const ProductCards: React.FC = () => {
                 
                 {/* Product Title */}
                 <div className="absolute bottom-0 left-0 w-full p-8">
-                  <h3 className="text-3xl font-medium mb-6">{product.title}</h3>
+                  <h3 className="text-2xl font-bold mb-6 text-white">{product.title}</h3>
                   <Button 
                     href="#" 
                     label="Learn more" 
