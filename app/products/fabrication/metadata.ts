@@ -1,11 +1,11 @@
 import { Metadata } from 'next'
 
-export const fabricationMetadata: Metadata = {
-    title: 'Steel Fabrication Services Melbourne',
-    description: 'Professional steel fabrication services in Melbourne. ASI Steel offers custom steel fabrication, welding, and metalwork solutions for construction and industrial projects.',
-    keywords: ['steel fabrication melbourne', 'metal fabrication services', 'custom steel work', 'welding services melbourne', 'industrial steel fabrication'],
+export const metadata: Metadata = {
+    title: 'Steel Fabrication Products | ASI Steel Melbourne',
+    description: 'Discover our comprehensive range of fabricated steel products including cages, bar mats, panels and more - precisely designed to meet your project\'s needs.',
+    keywords: ['steel fabrication melbourne', 'reinforcement cages', 'bar mats', 'rectangular cages', 'fabricated steel products', 'steel panels'],
     openGraph: {
-      title: 'Steel Fabrication Services | ASI Steel Melbourne',
-      description: 'Expert steel fabrication services in Melbourne. Custom solutions for construction and industrial projects. Quality assured fabrication.',
+      title: 'Steel Fabrication Products | ASI Steel Melbourne',
+      description: 'Custom-made steel fabrication products including cages, bar mats, and panels for construction projects. Quality assured fabrication solutions.',
     }
-  }
+}

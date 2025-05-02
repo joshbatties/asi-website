@@ -19,6 +19,10 @@ export default function Home() {
     <Hero />
     <Introduction />
     <ProductCards />
+    <h2 className="text-5xl font-light tracking-tight text-center mb-4">Our Services</h2>
+        
+        {/* Underline */}
+        <div className="w-56 h-0.5 bg-blue-500 mx-auto mb-4"></div>
     <ServiceCards />
     <ContactForm />
     </>

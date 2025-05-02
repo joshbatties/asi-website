@@ -1,11 +1,20 @@
 import { Metadata } from 'next'
 
-export const deliveryMetadata: Metadata = {
-    title: 'Steel Materials Delivery Melbourne',
-    description: 'Reliable steel materials delivery across Melbourne and Victoria. ASI Steel offers prompt, secure delivery services for all steel products and construction materials.',
-    keywords: ['steel delivery melbourne', 'construction materials transport', 'building supplies delivery', 'steel transport victoria', 'material logistics melbourne'],
-    openGraph: {
-      title: 'Steel Materials Delivery | ASI Steel Melbourne',
-      description: 'Fast and reliable steel delivery services across Melbourne and Victoria. Secure transport for all your construction materials.',
-    }
+export const metadata: Metadata = {
+  title: 'Material Delivery Services | ASI Steel Melbourne',
+  description: 'Reliable steel materials delivery with our HVNL-certified fleet. We offer flexible delivery options, quality assurance, and dedicated customer support for all your steel product deliveries.',
+  keywords: [
+    'steel delivery melbourne', 
+    'construction materials transport', 
+    'HVNL-certified fleet',
+    'same-day steel delivery', 
+    'flexible delivery options',
+    'quality assured steel transport',
+    'building supplies delivery', 
+    'steel transport victoria'
+  ],
+  openGraph: {
+    title: 'Material Delivery Services | ASI Steel Melbourne',
+    description: 'Prompt, safe and secure delivery of steel materials. Our HVNL-certified fleet ensures your materials arrive on time and in perfect condition.',
   }
+}

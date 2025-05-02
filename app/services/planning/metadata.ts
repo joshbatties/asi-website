@@ -1,11 +1,20 @@
 import { Metadata } from 'next'
 
-export const planningMetadata: Metadata = {
-    title: 'Construction Planning Services Melbourne',
-    description: 'Professional construction planning services in Melbourne. ASI Steel provides expert project scheduling, material planning, and construction coordination.',
-    keywords: ['construction planning melbourne', 'project scheduling', 'building material planning', 'construction coordination victoria', 'steel project planning'],
-    openGraph: {
-      title: 'Construction Planning Services | ASI Steel Melbourne',
-      description: 'Expert construction planning and scheduling services in Melbourne. Efficient project coordination and material planning.',
-    }
+export const metadata: Metadata = {
+  title: 'Plan Scheduling Services | ASI Steel Melbourne',
+  description: 'Expert reinforcement scheduling services including detailed schedules, annotated plans, and product estimation based on architectural drawings for all your construction projects.',
+  keywords: [
+    'reinforcement schedules', 
+    'reinforcement planning',
+    'annotated construction plans', 
+    'steel product estimation',
+    'reinforcement quantity take-offs',
+    'construction plan scheduling', 
+    'comprehensive project support',
+    'steel reinforcement planning'
+  ],
+  openGraph: {
+    title: 'Plan Scheduling Services | ASI Steel Melbourne',
+    description: 'Our expert team provides detailed schedules, plans, and estimations of reinforcement products based on architectural drawings for all your construction projects.',
   }
+}

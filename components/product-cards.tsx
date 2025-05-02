@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Button from './button';
+import Link from 'next/link';
 
 const ProductCards: React.FC = () => {
   const products = [
@@ -10,21 +11,25 @@ const ProductCards: React.FC = () => {
       id: 1,
       title: 'Steel Reinforcing Bar',
       image: '/images/steel-reinforcing-bar.jpg',
+      link: '/products/bar'
     },
     {
       id: 2,
       title: 'Steel Fabrication',
       image: '/images/steel-fabrication.jpg',
+      link: '/products/fabrication'
     },
     {
       id: 3,
       title: 'Steel Mesh',
       image: '/images/steel-mesh.jpg',
+      link: '/products/mesh'
     },
     {
       id: 4,
       title: 'Tools & Accessories',
       image: '/images/tools-accessories.jpeg',
+      link: '/products/tools'
     },
   ];
 
@@ -46,21 +51,28 @@ const ProductCards: React.FC = () => {
                   src={product.image}
                   alt={product.title}
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black to-black/30 group-hover:from-black/90 group-hover:to-black/60 transition-all duration-300"></div>
                 
                 {/* Product Title */}
                 <div className="absolute bottom-0 left-0 w-full p-8">
                   <h3 className="text-2xl font-bold mb-6 text-white">{product.title}</h3>
                   <Button 
-                    href="#" 
+                    href={product.link} 
                     label="Learn more" 
                   />
                 </div>
               </div>
             </div>
           ))}
+        </div>
+        
+        {/* View All Products Button */}
+        <div className="flex justify-center mt-14">
+          <Link href="/products" className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]">
+            View All Products
+          </Link>
         </div>
       </div>
     </section>

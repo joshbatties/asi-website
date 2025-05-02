@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   },
   description: 'Leading steel suppliers in Melbourne. ASI Steel provides premium steel products, fabrication services, and reinforcing solutions across Victoria. Quality Australian steel solutions.',
   keywords: ['steel suppliers melbourne', 'steel fabrication', 'reinforcing bar', 'steel mesh', 'construction supplies melbourne', 'building materials victoria'],
+  icons: {
+    icon: '/images/favicon.ico',
+  },
   robots: {
     index: true,
     follow: true,
@@ -47,6 +50,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/images/favicon.ico" />
+      </head>
       <body className={inter.className}>
         <Header />
         <main className="min-h-screen pt-20">
