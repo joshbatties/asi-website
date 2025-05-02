@@ -2,6 +2,7 @@ import Hero from '@/components/hero'
 import Introduction from '@/components/introduction'
 import ProductCards from '@/components/product-cards'
 import ServiceCards from '@/components/service-cards'
+import FeaturedProjects from '@/components/FeaturedProjects'
 import ContactForm from '@/components/contact-form'
 import { Metadata } from 'next'
 
@@ -19,6 +20,7 @@ export default function Home() {
     <Hero />
     <Introduction />
     <ProductCards />
+    <FeaturedProjects />
     <h2 className="text-5xl font-light tracking-tight text-center mb-4">Our Services</h2>
         
         {/* Underline */}
