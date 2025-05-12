@@ -30,10 +30,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                   opacity-40 group-hover:opacity-100 transition-opacity duration-500"
       ></div>
       
-      {/* Mobile title and info - always visible on mobile */}
+      {/* Mobile title - always visible at top on mobile */}
       <div className="absolute inset-x-0 top-0 p-6 z-10 md:hidden">
-        <h3 className="text-3xl font-bold text-white mb-4">{project.title}</h3>
-        <p className="text-xl text-blue-100/90 mb-3">{project.description}</p>
+        <h3 className="text-3xl font-bold text-white">{project.title}</h3>
+      </div>
+      
+      {/* Mobile description and info - always visible at bottom on mobile */}
+      <div className="absolute inset-x-0 bottom-0 p-6 z-10 md:hidden">
+        <p className="text-lg text-blue-100/70 mb-3">{project.description}</p>
         <div className="flex justify-between text-sm text-blue-300">
           <span>{project.sector}</span>
           <span>{project.location}</span>

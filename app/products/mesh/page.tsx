@@ -98,7 +98,7 @@ export default function SteelMesh() {
           
           <div className="relative w-full h-[300px] md:h-[400px] mb-6 rounded-lg overflow-hidden">
             <Image 
-              src="/images/steel-mesh.jpg" 
+              src="/images/rectangularmesh.jpg" 
               alt="Rectangular Reinforcing Mesh" 
               fill
               className="object-cover" 
@@ -170,7 +170,7 @@ export default function SteelMesh() {
           
           <div className="relative w-full h-[300px] md:h-[400px] mb-6 rounded-lg overflow-hidden">
             <Image 
-              src="/images/steel-mesh.jpg" 
+              src="/images/trenchmesh.jpg" 
               alt="Trench Mesh" 
               fill
               className="object-cover" 

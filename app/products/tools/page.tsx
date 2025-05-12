@@ -55,10 +55,10 @@ export default function ToolsAndAccessories() {
           <div className="mt-12 mb-12">
             <div className="relative w-full h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-lg">
               <Image 
-                src="/images/tools-accessories.jpeg" 
+                src="/images/tools-and-accessories.png" 
                 alt="Construction tools and accessories" 
                 fill
-                className="object-cover transition-transform duration-300 hover:scale-105" 
+                className="object-contain transition-transform duration-300 hover:scale-105" 
               />
             </div>
           </div>

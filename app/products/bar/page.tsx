@@ -16,7 +16,7 @@ export default function SteelReinforcingBar() {
   const stockProducts = [
     {
       title: 'Deformed Bar in Length',
-      image: '/images/steel-reinforcing-bar.jpg',
+      image: '/images/DBIL.png',
       description: 'Standard lengths of deformed bars ready for immediate use.'
     }
   ];
@@ -25,22 +25,22 @@ export default function SteelReinforcingBar() {
   const processedProducts = [
     {
       title: 'Deformed Bar in Coil',
-      image: '/images/steel-reinforcing-bar.jpg',
+      image: '/images/DBIC.jpg',
       description: 'Compact coils processed to your specifications, ready for various construction needs.'
     },
     {
       title: 'Deformed Bar in Length',
-      image: '/images/steel-reinforcing-bar.jpg',
+      image: '/images/DBIL.png',
       description: 'Deformed bars processed to your precise specifications.'
     },
     {
       title: 'Ligatures',
-      image: '/images/steel-fabrication.jpg',
+      image: '/images/ligs.png',
       description: 'Smaller bent pieces of rebar, ideal for holding main reinforcement in place within concrete structures.'
     },
     {
       title: 'Bent Bars',
-      image: '/images/steel-fabrication.jpg',
+      image: '/images/bent.webp',
       description: 'Reinforcing bars bent into specific shapes for construction projects.'
     }
   ];

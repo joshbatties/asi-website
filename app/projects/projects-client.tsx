@@ -10,6 +10,7 @@ export default function ProjectsClient() {
   const [selectedSector, setSelectedSector] = useState<string | null>(null);
   const [selectedLocation, setSelectedLocation] = useState<string | null>(null);
   const [filteredProjects, setFilteredProjects] = useState(projects);
+  const [isFilterExpanded, setIsFilterExpanded] = useState(false);
   
   const sectors = getSectors();
   const locations = getLocations();
@@ -42,6 +43,10 @@ export default function ProjectsClient() {
   const resetFilters = () => {
     setSelectedSector(null);
     setSelectedLocation(null);
+  };
+  
+  const toggleFilters = () => {
+    setIsFilterExpanded(!isFilterExpanded);
   };
   
   return (
@@ -82,59 +87,82 @@ export default function ProjectsClient() {
       
       <div className="container mx-auto px-4 py-12 max-w-7xl">
         {/* Filters Section */}
-        <div className="mb-12">
-          <div className="flex items-center gap-4 flex-wrap">
-            <span className="text-xl text-blue-400 font-medium">Filter by</span>
-            
-            {/* Sector Filter Dropdown */}
-            <div className="relative flex-grow max-w-xs">
-              <select
-                value={selectedSector || ""}
-                onChange={handleSectorChange}
-                className="appearance-none w-full bg-transparent border border-gray-600 rounded-md py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-              >
-                <option value="" className="bg-gray-900">Select Sector</option>
-                {sectors.map((sector) => (
-                  <option key={sector} value={sector} className="bg-gray-900">
-                    {sector}
-                  </option>
-                ))}
-              </select>
-              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
-                <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              </div>
-            </div>
-            
-            {/* Location Filter Dropdown */}
-            <div className="relative flex-grow max-w-xs">
-              <select
-                value={selectedLocation || ""}
-                onChange={handleLocationChange}
-                className="appearance-none w-full bg-transparent border border-gray-600 rounded-md py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-              >
-                <option value="" className="bg-gray-900">Select Location</option>
-                {locations.map((location) => (
-                  <option key={location} value={location} className="bg-gray-900">
-                    {location}
-                  </option>
-                ))}
-              </select>
-              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
-                <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              </div>
-            </div>
-            
-            {/* Reset Button */}
+        <div className="mb-12 max-w-2xl mx-auto">
+          {/* Mobile Filter Toggle Button */}
+          <div className="md:hidden mb-4 flex justify-center">
             <button 
-              onClick={resetFilters}
-              className="bg-gray-900 hover:bg-gray-800 text-white py-3 px-8 rounded-md transition-colors min-w-[120px]"
+              onClick={toggleFilters}
+              className="flex items-center gap-2 bg-transparent border border-gray-600 rounded-md py-2 px-4 text-white"
             >
-              Reset
+              <span>Filter Projects</span>
+              <svg 
+                className={`h-5 w-5 transition-transform duration-300 ${isFilterExpanded ? 'rotate-180' : ''}`} 
+                xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 20 20" 
+                fill="currentColor"
+              >
+                <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
             </button>
+          </div>
+          
+          {/* Filter Content - Hidden on mobile unless expanded */}
+          <div className={`${isFilterExpanded ? 'block' : 'hidden'} md:block`}>
+            <div className="flex flex-col md:flex-row items-center gap-4">
+              <span className="text-xl text-blue-400 font-medium md:mr-2">Filter by</span>
+              
+              {/* Sector Filter Dropdown */}
+              <div className="relative w-full md:flex-1 max-w-full md:max-w-xs">
+                <select
+                  value={selectedSector || ""}
+                  onChange={handleSectorChange}
+                  className="appearance-none w-full bg-transparent border border-gray-600 rounded-md py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                >
+                  <option value="" className="bg-gray-900">Select Sector</option>
+                  {sectors.map((sector) => (
+                    <option key={sector} value={sector} className="bg-gray-900">
+                      {sector}
+                    </option>
+                  ))}
+                </select>
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
+                  <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </div>
+              </div>
+              
+              {/* Location Filter Dropdown */}
+              <div className="relative w-full md:flex-1 max-w-full md:max-w-xs">
+                <select
+                  value={selectedLocation || ""}
+                  onChange={handleLocationChange}
+                  className="appearance-none w-full bg-transparent border border-gray-600 rounded-md py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                >
+                  <option value="" className="bg-gray-900">Select Location</option>
+                  {locations.map((location) => (
+                    <option key={location} value={location} className="bg-gray-900">
+                      {location}
+                    </option>
+                  ))}
+                </select>
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
+                  <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </div>
+              </div>
+              
+              {/* Reset Button - Centered on mobile, inline on desktop */}
+              <button 
+                onClick={resetFilters}
+                className="mt-4 md:mt-0 border border-blue-500 text-blue-400 bg-transparent rounded-md py-3 px-8 
+                        transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)] 
+                        hover:border-blue-300 hover:text-blue-200 backdrop-blur-sm hover:scale-105"
+              >
+                Reset Filters
+              </button>
+            </div>
           </div>
         </div>
         
