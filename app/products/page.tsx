@@ -44,8 +44,7 @@ export default function Products() {
         subtitle="Discover our comprehensive range of high-quality steel products for construction and infrastructure projects."
       />
       
-      <div className="container mx-auto px-4 py-16 max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-white text-center">Product Categories</h2>
+      <div className="container mx-auto px-4 py-16 max-w-6xl"> 
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {productCategories.map((category) => (
@@ -57,7 +56,7 @@ export default function Products() {
                         hover:shadow-[0_0_25px_rgba(150,150,150,0.4)] 
                         transition-all duration-300"
             >
-              <div className="relative h-[250px] w-full">
+              <div className="relative h-[250px] w-full overflow-hidden">
                 <Image 
                   src={category.image} 
                   alt={category.title} 
