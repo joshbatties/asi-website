@@ -91,7 +91,7 @@ export default function Products() {
             Our commitment to excellence ensures that every product we supply is reliable, durable, and perfect for your construction needs.
           </p>
           <p className="text-blue-100/80 mb-4">
-            Whether you're working on a residential project, commercial building, or infrastructure development, our products are designed to provide 
+            Whether you&apos;re working on a residential project, commercial building, or infrastructure development, our products are designed to provide 
             the strength and performance you require.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-between items-center">
