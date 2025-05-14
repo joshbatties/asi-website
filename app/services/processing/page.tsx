@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import Image from 'next/image';
 import ProductsHero from '@/components/ProductsHero';
-import ContactForm from '@/components/contact-form';
 
 export const metadata: Metadata = {
   title: 'Steel Processing Services | ASI Steel Melbourne',

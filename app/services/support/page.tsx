@@ -168,7 +168,7 @@ export default function TechnicalSupport() {
           <div className="lg:w-1/2">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">Training and Education</h2>
             <p className="text-blue-100/80 mb-6">
-              Enhance your team's knowledge and skills:
+              Enhance your team&apos;s knowledge and skills:
             </p>
             
             <ul className="text-blue-100/80 space-y-5 mb-8">
@@ -197,7 +197,7 @@ export default function TechnicalSupport() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white text-center">Request Technical Support</h2>
           <p className="text-blue-100/80 mb-10 text-center max-w-3xl mx-auto">
             Our technical team is here to help with your steel-related challenges. 
-            Fill out the form below, and we'll connect you with the right specialist for your needs.
+            Fill out the form below, and we&apos;ll connect you with the right specialist for your needs.
           </p>
           
           {/* Contact Form */}
