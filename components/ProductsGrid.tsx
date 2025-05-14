@@ -64,8 +64,11 @@ export default function ProductsGrid() {
       observer.observe(gridRef.current);
     }
 
+    // Store ref value in a variable to avoid the exhaustive-deps warning
+    const currentRef = gridRef.current;
+    
     return () => {
-      if (gridRef.current) observer.unobserve(gridRef.current);
+      if (currentRef) observer.unobserve(currentRef);
     };
   }, []);
 

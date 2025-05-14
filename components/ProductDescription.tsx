@@ -38,8 +38,11 @@ export default function ProductDescription({
       observer.observe(sectionRef.current);
     }
 
+    // Store ref value in a variable to avoid the exhaustive-deps warning
+    const currentRef = sectionRef.current;
+    
     return () => {
-      if (sectionRef.current) observer.unobserve(sectionRef.current);
+      if (currentRef) observer.unobserve(currentRef);
     };
   }, [align]);
 
