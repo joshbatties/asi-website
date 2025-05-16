@@ -26,9 +26,9 @@ export default function AboutSection({
           if (entry.isIntersecting) {
             // Apply appropriate animation based on alignment
             if (align === 'right') {
-              entry.target.classList.add('animate-slideInLeft');
-            } else {
               entry.target.classList.add('animate-slideInRight');
+            } else {
+              entry.target.classList.add('animate-slideInLeft');
             }
             observer.unobserve(entry.target);
           }
