@@ -1,5 +1,4 @@
 import { Metadata } from 'next'
-import ProjectsWrapper from '@/components/ProjectsWrapper'
 import ProjectsClient from './projects-client'
 
 export const metadata: Metadata = {
@@ -21,8 +20,8 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <ProjectsWrapper>
+    <main>
       <ProjectsClient />
-    </ProjectsWrapper>
+    </main>
   )
 }

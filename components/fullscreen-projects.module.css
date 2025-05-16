@@ -1,0 +1,86 @@
+/* Fullscreen Projects Module */
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.projectSection {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.contentOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0) 100%);
+  z-index: 10;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+  font-size: 1.15rem;
+  margin-bottom: 1.5rem;
+  color: rgba(219, 234, 254, 0.9);
+  max-width: 800px;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  color: #93c5fd;
+  font-size: 1.15rem;
+  max-width: 300px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.25rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .contentOverlay {
+    padding: 1.5rem 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .contentPanel {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contentPanel {
+    width: 40%;
+  }
+} 

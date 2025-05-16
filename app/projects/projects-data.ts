@@ -18,7 +18,7 @@ export const projects: Project[] = [
     id: "western-sydney-airport",
     title: "Western Sydney Airport",
     description: "Surface and Civil Alignment Works",
-    imageSrc: "", // Placeholder for image
+    imageSrc: "/images/ACRS.png",
     isVideo: true,
     videoSrc: "/videos/WesternSydneyAirportSCAW.mp4",
     sector: 'Infrastructure',
