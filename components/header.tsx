@@ -45,7 +45,7 @@ export default function Header() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
 
   return (
-    <header className="fixed w-full bg-black text-white z-50 border-b border-white/10 shadow-lg">
+    <header className="w-full bg-black text-white z-50 border-b border-white/10 shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -115,7 +115,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       <div 
-        className={`fixed inset-0 top-20 bg-black z-40 md:hidden border-t border-white/10 
+        className={`absolute inset-0 top-20 bg-black z-40 md:hidden border-t border-white/10 
                     transition-all duration-300 flex justify-center items-start 
                     ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
       >

@@ -142,7 +142,7 @@ export default function MaterialsDelivery() {
           <div className="lg:w-1/2 mb-6 lg:mb-0">
             <div className="relative w-full h-[300px] rounded-lg overflow-hidden">
               <Image 
-                src="/images/quality-assurance.jpg" 
+                src="/images/quality-control.jpg" 
                 alt="Quality assurance checklist" 
                 fill
                 className="object-cover"

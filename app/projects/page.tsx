@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <main>
+    <main className="projects-page h-full w-full overflow-hidden">
       <ProjectsClient />
     </main>
   )

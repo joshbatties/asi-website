@@ -71,7 +71,7 @@ export default function TechnicalSupport() {
           <div className="lg:w-1/2 mb-6 lg:mb-0 pr-0 lg:pr-8">
             <div className="relative w-full h-[300px] rounded-lg overflow-hidden">
               <Image 
-                src="/images/on-site-support.jpg" 
+                src="/images/on-site-support.png" 
                 alt="On-site technical support" 
                 fill
                 className="object-cover"
@@ -256,9 +256,10 @@ export default function TechnicalSupport() {
                   id="supportType"
                   name="supportType"
                   required
+                  defaultValue=""
                   className="w-full px-4 py-3 bg-transparent border border-gray-700 rounded-md text-gray-300 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all"
                 >
-                  <option value="" disabled selected className="bg-gray-900">Select Support Type</option>
+                  <option value="" disabled className="bg-gray-900">Select Support Type</option>
                   <option value="consultation" className="bg-gray-900">Expert Consultation</option>
                   <option value="onsite" className="bg-gray-900">On-Site Support</option>
                   <option value="documentation" className="bg-gray-900">Technical Documentation</option>
@@ -273,9 +274,10 @@ export default function TechnicalSupport() {
                   id="timeline"
                   name="timeline"
                   required
+                  defaultValue=""
                   className="w-full px-4 py-3 bg-transparent border border-gray-700 rounded-md text-gray-300 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all"
                 >
-                  <option value="" disabled selected className="bg-gray-900">Project Timeline</option>
+                  <option value="" disabled className="bg-gray-900">Project Timeline</option>
                   <option value="urgent" className="bg-gray-900">Urgent (within 48 hours)</option>
                   <option value="soon" className="bg-gray-900">This Week</option>
                   <option value="planning" className="bg-gray-900">Planning Phase (1-4 weeks)</option>

@@ -43,6 +43,11 @@ a {
   overflow-x: hidden;
 }
 
+.projects-layout {
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
 /* For project page fullscreen snapping */
 .fullscreen-projects-view {
   width: 100%;

@@ -16,7 +16,7 @@ export default function FullscreenProjectView({ projects }: FullscreenProjectVie
   const defaultImage = '/images/ACRS.png';
 
   return (
-    <div ref={containerRef} className={styles.container}>
+    <div ref={containerRef} className={`${styles.container} fullscreen-projects-view`}>
       {projects.map((project, index) => {
         // Ensure we have a valid image URL - use a known existing image as fallback
         const imageUrl = project.imageSrc && project.imageSrc.trim() !== '' 
@@ -28,7 +28,7 @@ export default function FullscreenProjectView({ projects }: FullscreenProjectVie
         return (
           <div 
             key={project.id}
-            className={styles.projectSection}
+            className={`${styles.projectSection} snap-start`}
             id={`project-${project.id}`}
           >
             {/* Fullscreen image background */}
